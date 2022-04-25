@@ -2,6 +2,7 @@ import "../scss/index.scss"
 import "./components/cutButton"
 import "./components/hexagonNumber"
 import "./components/dragSlider"
+import "./preloader"
 import "./mainpage"
 import "./staking"
 

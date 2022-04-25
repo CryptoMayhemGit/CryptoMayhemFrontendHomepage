@@ -7,7 +7,7 @@ main > footer {
         animation: scrollBackground 6s linear infinite;
         @keyframes scrollBackground {
             0% {
-                background-position: 283px 0;
+                background-position: 265px 0;
             }
             100% {
                 background-position: 0 0;
@@ -81,19 +81,23 @@ main > footer {
 
     .finalFooter {
         max-width: 1625px;
-        margin: 96px auto 48px 36px;
+        margin: 96px auto 48px auto;
+        padding-left: 36px;
         display: flex;
-        grid-template-columns: 1fr 1fr 1fr;
-        align-items: end;
         justify-content: space-between;
 
         > * {
+            display: flex;
+            flex-direction: column;
+            place-content: center;
             flex: 0 0 auto;
-            min-width:200px;
+            min-width: 200px;
         }
 
         @media (max-width: 800px) {
+            margin: 0;
             display: block;
+            text-align: center;
             > * {
                 margin: 40px 36px;
             }
