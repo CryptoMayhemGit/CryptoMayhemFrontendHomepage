@@ -32,6 +32,13 @@
         justify-items: center;
 
         li {
+			
+			.tenset-logo
+			{
+				height: 75px;
+			}
+		
+			margin-bottom: 47px;
             display: grid;
             filter: grayscale(1);
             opacity: 0.9;

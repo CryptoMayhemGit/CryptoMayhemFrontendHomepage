@@ -234,7 +234,7 @@ section.supply {
             svg {
                 width: calc(280px - 48px * var(--scroll));
                 height: calc(280px - 48px * var(--scroll));
-                margin: -20px;
+                margin: 20px -20px;
                 display: inline-block;
                 text-align: left;
             }

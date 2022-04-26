@@ -122,7 +122,7 @@
                     <a href="https://cryptomayhem.io/pl/">PL</a>
                 </li>
             </ul>
-            <cut-button class="buyAdriaButton">KUP $ADRIA</cut-button>
+            <cut-button class="disableBuyAdriaButton">KUP $ADRIA</cut-button>
         </div>
         <div class="hamburger">
             <div></div>
@@ -306,7 +306,7 @@
                     tym, co Adria Corp. powinna zrobić z zebraną pulą tokenów.
 
                 <div class="button-wrapper">
-                    <cut-button>Kup $Adria</cut-button>
+                    <cut-button class="disableBuyAdriaButton">Kup $Adria</cut-button>
                 </div>
                 <div class="sub">
                     <div>$Adria token na giełdach: <img src="../en/img/icons/Exchange.svg" class="exchangeMiniLogo"></div>
@@ -785,26 +785,14 @@
         </div>
     </section>
     <section class="behindUs">
-        <h2>Wsparcie</h2>
-        <ul>
-            <li><a href="https://adriagames.com/"><img src="../en/img/logos/adriagames.svg" alt="Adria Games"></a></li>
-            <li><a href="https://adria-art.pl/"><img src="../en/img/logos/adriaart.png" alt="Adria Art"></a></li>
-            <li><a href="https://comcreo.com/"><img src="../en/img/logos/comcreo.svg" alt="Comcreo"></a>
-            </li>
-        </ul>
-    </section>
-    <section class="partners" id="partners">
         <h2>Partnerzy</h2>
         <ul>
-            <li>
-                <a href="https://synapse.network/"><img src="../en/img/logos/SynapseNetwork.svg" alt="Synapse Network"></a>
-            </li>
-            <li>
-                <a href="https://www.tenset.io/"><img src="../en/img/logos/tenset-incubator.svg" alt="Tenset"></a>
-            </li>
-            <li>
-                <a href="https://kryptoekipa.pl/"><img src="../en/img/logos/Kryptoekipa.svg" alt="Kryptoekipa"></a>
-            </li>
+            <li><a href="https://www.tenset.io/"><img class="tenset-logo" src="../en/img/logos/tenset-incubator.svg" alt="Tenset"></a></li>
+            <li><a href="https://adriagames.com/"><img src="../en/img/logos/adriagames.svg" alt="Adria Games"></a></li>
+            <li><a href="https://comcreo.com/"><img src="../en/img/logos/comcreo.svg" alt="Comcreo"></a></li>
+            <li><a href="https://synapse.network/"><img src="../en/img/logos/SynapseNetwork.svg" alt="Synapse Network"></a></li>
+            <li><a href="https://adria-art.pl/"><img src="../en/img/logos/adriaart.png" alt="Adria Art"></a></li>
+            <li><a href="https://kryptoekipa.pl/"><img src="../en/img/logos/Kryptoekipa.svg" alt="Kryptoekipa"></a></li>
         </ul>
     </section>
     <section class="discover" id="papers">
@@ -820,7 +808,8 @@
                 <p>Szczegółowy opis zawartości projektu w tym funkcjonalności naszego tokena oraz NFT. Przegląd
                     całego
                     ekosystemu oraz interpretacje wizualne.</p>
-                <cut-button href="../en/img/documents/whitepaper_pl.pdf">Pobierz</cut-button>
+			
+                <cut-button class="buyAdriaButton" href="../en/img/documents/whitepaper_pl.pdf">Pobierz</cut-button>
             </article>
             <article>
                 <div class="image">
@@ -831,7 +820,7 @@
                 <h3>PITCHDECK</h3>
                 <p>Wizualizacja projektu gry. Dzięki niemu zrozumiesz wstępnie nasz ecosystem oraz zapoznasz się z
                     wizją projektu.</p>
-                <cut-button href="../en/img/documents/pitchdeck_pl.pdf">Pobierz</cut-button>
+                <cut-button class="buyAdriaButton" href="../en/img/documents/pitchdeck_pl.pdf">Pobierz</cut-button>
             </article>
         </div>
     </section>
@@ -845,7 +834,7 @@
             </li>
             <li>
                 <a href="https://t.me/CryptoMayhemAnnouncement"
-                   class="icon-telegramlight"><span>Telegram Announcement</span></a>
+                   class="icon-telegramlight"><span>Telegram</br>Announcement</span></a>
             </li>
             <li>
                 <a href="https://t.me/CryptoMayhemOfficial" class="icon-telegramlight"><span>Telegram Chat</span></a>
