@@ -1,20 +1,41 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+Crypto Mayhem homepage
 
 # Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## Read before starting
+Please clean up/remove ```/dist``` catalog manually before each build/local run. It's a subject for the future improvement with clean-webpack-plugin.
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+## Run Locally
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+Clone the project
+
+```bash
+  git clone https://AdriaGames@dev.azure.com/AdriaGames/CryptoMayhem/_git/CryptoMayhemWWW
+```
+
+Go to the project directory
+
+```bash
+  cd CryptoMayhemWWW
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server (it'll start on port 9000)
+
+```bash
+  npm run start
+```
+
+## Build
+
+```bash
+  npm run build
+```
+
+Built files will be in ```/dist``` catalog
