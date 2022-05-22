@@ -9,7 +9,7 @@
   "license": "AllRightsReserved",
   "scripts": {
     "build": "webpack ./js/index.js --mode=production",
-    "start": "npm run build && webpack serve --mode=development"
+    "start": "webpack ./js/index.js && webpack serve --mode=development"
   },
   "dependencies": {
     "css-loader": "^6.6.0",
