@@ -43,7 +43,8 @@ section.supply {
 
         path[data-supply] {
             stroke: black;
-            transform-origin: 302px 190px;
+			stroke-width: 25px;
+            transform-origin: 2800px 2800px;
             transition: .5s all ease;
 
             &.isActive {
