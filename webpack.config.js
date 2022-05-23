@@ -92,9 +92,10 @@ module.exports = {
             locale : 'en', // The default locale
             locales: ['pl', 'en'],
             outputDefault: '__lng__/__file__', // default: '__file__'
-            outputOther  : '__lng__/__file__', // default: '__lng__/__file__'
-            localesPath  : path.join(__dirname, 'locales/'),
-            files        : '*.html',
+            outputOther: '__lng__/__file__', // default: '__lng__/__file__'
+            localesPath: path.join(__dirname, 'locales/'),
+            suppressRaw: true,
+            files: '*.html',
           })
     ]
 }
