@@ -48,9 +48,6 @@ module.exports = {
     },
     output: {
         filename: '[name].js',
-        chunkFilename: '[name].min.js',
-        path: __dirname + "/dist/",
-
     },
     devServer: {
         static: {
@@ -78,12 +75,12 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(jpe?g|png|gif|svg|webp)$/,
+                test: /\.(jpe?g|png|gif|webp|svg)$/,
                 type: 'asset/resource',
                 generator: {
                     filename: 'img/[hash][ext]'
                 }
-            },
+            }
         ]
     },
     plugins: [
