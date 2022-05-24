@@ -5,42 +5,12 @@ section.galacticMission {
     justify-content: center;
     padding: 320px 0 300px 0;
     text-align: center;
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
     height: 100vh;
-    min-height: 750px;
     box-sizing: border-box;
-
-
-    &::before {
-        content: '';
-        display: block;
-        position: absolute;
-
-        transform: rotate(-18deg);
-        opacity: 0.46;
-        bottom: -250px;
-        right: calc(50% - 1067px);
-
-        width: 667px;
-        height: 1072px;
-        background-image: radial-gradient(closest-side, #c23b1d 0%, rgba(194, 59, 29, 0) 100%);
-        z-index: -4;
-    }
-
-    &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        background: radial-gradient(closest-side, #c83a1a, transparent);
-        width: 158px;
-        height: 211px;
-        transform: rotate(-18deg) scale(1.5);
-        opacity: 0.46;
-        left: calc(50% - 632px);
-        top: 404px;
-        z-index: -1;
-        animation: 6s ease-in-out bounce-drone-light infinite;
-    }
 
     .subTitle {
         font-size: 71px;
@@ -160,13 +130,10 @@ section.galacticMission {
         }
     }
     @media(max-width: 900px) {
-        height: calc(100vh);
-        min-height: 720px;
-        padding: 100px 0 0 0;
-        display: grid;
-        grid-template-rows: 1fr min-content min-content min-content;
-        align-items: center;
-        justify-items: center;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
 
         &::after {
             display: none;

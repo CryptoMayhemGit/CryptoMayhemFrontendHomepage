@@ -82,6 +82,40 @@
 
 }
 
+.video-container {
+    height: 100vh;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+}
+
+.video-full, .video-mobile {
+    background: black;
+    display: none;
+}
+
+
+@media (max-width: 767px) {
+    .video-mobile {
+        display: block;
+        height: 100vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .video-full {
+        display: block;
+    }
+}
+
+@media (min-width: 1921px) {
+    .video-full {
+        transform:scale(1.5);
+    }
+}
+
 @import "./galacticMission";
 @import "./metaverse";
 @import "./nft";
