@@ -1,5 +1,34 @@
 {
-    "TEST": {
-        "KEY": "wartość"
+    "INDEX": {
+		"HEADER": {
+			"LEFT_BAR": {
+				"TWITTER": "Twitter",
+				"TELEGRAM_ANNOUNCEMENT": "Telegram Announcement",
+				"TWITTER_CHAT": "Telegram Chat",
+				"YOUTUBE": "YouTube",
+				"DISCORD": "Discord",
+				"MEDIUM": "Medium"
+			},
+			"RIGHT_BAR": {
+				"PLAY": "Zagraj",
+				"METAVERSE": "Metaverse",
+				"NFT": "NFT",
+				"TOKENOMIC": "Tokenomia",
+				"ROADMAP": "Mapa rozwoju",
+				"TEAM": "Zespół",
+				"DOCUMENTS": "Dokumenty",
+				"CONTACT": "Kontakt"
+			},
+			"TOP_BAR": {
+				"ONLY_MOBILE_PLAY": "Zagraj",
+				"METAVERSE": "Metaverse",
+				"NFT": "NFT",
+				"TOKENOMIC": "Tokenomia",
+				"ROADMAP": "Mapa rozwoju",
+				"TEAM": "Zespół",
+				"DOCUMENTS": "Dokumenty",
+				"CONTACT": "Kontakt"
+			}
+		}
     }
 }

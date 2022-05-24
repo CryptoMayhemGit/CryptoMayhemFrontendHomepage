@@ -1,5 +1,34 @@
 {
-    "TEST": {
-        "KEY": "value"
+    "INDEX": {
+		"HEADER": {
+			"LEFT_BAR": {
+				"TWITTER": "Twitter",
+				"TELEGRAM_ANNOUNCEMENT": "Telegram Announcement",
+				"TWITTER_CHAT": "Telegram Chat",
+				"YOUTUBE": "YouTube",
+				"DISCORD": "Discord",
+				"MEDIUM": "Medium"
+			},
+			"RIGHT_BAR": {
+				"PLAY": "Play",
+				"METAVERSE": "Metaverse",
+				"NFT": "NFT",
+				"TOKENOMIC": "Tokenomic",
+				"ROADMAP": "Roadmap",
+				"TEAM": "Team",
+				"DOCUMENTS": "Documents",
+				"CONTACT": "Contact"
+			},
+			"TOP_BAR": {
+				"ONLY_MOBILE_PLAY": "Play",
+				"METAVERSE": "Metaverse",
+				"NFT": "NFT",
+				"TOKENOMIC": "Tokenomic",
+				"ROADMAP": "Roadmap",
+				"TEAM": "Team",
+				"DOCUMENTS": "Documents",
+				"CONTACT": "Contact"
+			}
+		}
     }
 }
