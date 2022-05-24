@@ -92,6 +92,7 @@
 }
 
 .video-full, .video-mobile {
+    margin: auto;
     background: black;
     display: none;
 }
@@ -110,6 +111,13 @@
         display: block;
     }
 }
+
+@media (min-width: 768px) and (orientation: portrait){
+    .video-full {
+        height: 100vh;
+    }
+}
+
 
 @media (min-width: 520px) and (max-width: 767px) {
     .video-mobile {
