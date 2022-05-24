@@ -117,6 +117,12 @@
     }
 }
 
+@media (min-width: 1900px) {
+    .video-full {
+        transform:scale(1.05);
+    }
+}
+
 @media (min-width: 1921px) {
     .video-full {
         transform:scale(1.5);
