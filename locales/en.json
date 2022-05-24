@@ -9,19 +9,9 @@
 				"DISCORD": "Discord",
 				"MEDIUM": "Medium"
 			},
-			"RIGHT_BAR": {
+			"MENU": {
+			    "BUY_ADRIA_BUTTON": "Buy ADRIA",
 				"PLAY": "Play",
-				"METAVERSE": "Metaverse",
-				"NFT": "NFT",
-				"TOKENOMIC": "Tokenomic",
-				"ROADMAP": "Roadmap",
-				"TEAM": "Team",
-				"DOCUMENTS": "Documents",
-				"CONTACT": "Contact"
-			},
-			"TOP_BAR": {
-				"BUY_ADRIA_BUTTON": "BUY ADRIA",
-				"ONLY_MOBILE_PLAY": "Play",
 				"METAVERSE": "Metaverse",
 				"NFT": "NFT",
 				"TOKENOMIC": "Tokenomic",
@@ -39,6 +29,30 @@
 		"SECTIONS": {
 			"GALACTIC_MISSION": {
 				"OPINION": "The world's first game that combines Grand Strategy with Top-Down Shooter in blockchain"
+			},
+			"METAVERSE": {
+				"FIRST_TEXT": "An exciting new metaverse in which the combination of bloody combat with an elaborate economic and strategic model becomes a reality, thanks to blockchain technology. The basic idea behind Crypto Mayhem is to provide players with one big game that combines Grand Strategy with Top-Down Shooter. The strategy game is about developing your colony on an alien planet, where micro-management of digital goods and currency affects the environment according to a designed model.",
+				"SECOND_TEXT": "Crypto Mayhem is a virtual world where, in a distant future, humanity has united under the leadership of Adria Corporation, fighting for survival against a space alien scourge. The struggle is not only to defend inhabited planets, but also to extract valuable raw materials found on alien-controlled planets."
+			},
+			"NFT": {
+				"CONTENT": {
+					"TEXT1": "Our NFT is an attribute value in the game. Unique attributes for each player.",
+					"TEXT2": "Everyone can produce their original Mech (NFT) from a combination of several elements NFT, to defeat hordes of enemies in a bloody battle for survival.",
+					"TEXT3": "The Drone (NFT) mines a rare resource and supports the mecha in battle.",
+					"TEXT4": "Avatar (NFT) and NPC (NFT) as a unit can have an item (NFT) with certain values that improve the profession.",
+					"TEXT5": "Combining heroes per land (NFT) allows you to extract resources to develop your civilization."
+				},
+				"END_TITLES": {
+					"TEXT": "Mech / Dron / Weapon / Avatar / NPC / Item / Land"
+				}
+			},
+			"GET_ADRIA": {
+				"TITLE": "Survive to get ADRIA",
+				"CONTENT": "ADRIA (BEP-20) - the main currency of the metaverse, used throughout the game ecosystem in services and trade. It allows you to stake provinces and take control of them for a set period of time, in order to extract taxes from transactions made between players within that trading space. The governance token (DAO) represents the power within Adria Corp, allowing the holder to decide on the production process, game balance and can make proposals for changes to the game. The DAO will decide what Adria Corp. should do with the pool of tokens collected.",
+				"BUY_ADRIA_BUTTON": "Buy ADRIA",
+				"ADRIA_TOKEN_PLACE": "ADRIA token on exchanges:",
+				"POWERED": "Powered by:",
+				"SOON": "SOON"
 			}
 		}
     }
