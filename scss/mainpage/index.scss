@@ -101,12 +101,19 @@
     .video-mobile {
         display: block;
         height: 100vh;
+        width: 100%;
     }
 }
 
 @media (min-width: 768px) {
     .video-full {
         display: block;
+    }
+}
+
+@media (min-width: 520px) and (max-width: 767px) {
+    .video-mobile {
+        transform: scale(2);
     }
 }
 
