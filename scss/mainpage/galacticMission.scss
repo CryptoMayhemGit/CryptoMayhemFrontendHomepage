@@ -27,7 +27,7 @@ section.galacticMission {
         font-size: 122px;
         text-transform: uppercase;
         font-family: "Nulshock";
-        max-width: 900px;
+        max-width: 1200px;
         text-align: center;
         letter-spacing: -1.5px;
         line-height: 0.95;
@@ -273,7 +273,6 @@ section.galacticMission-video {
             }
         }
     }
-
     @media (min-width: 1750px) and (max-height: 1000px) {
         height: calc(100vh - 48px);
         width: calc((100vh - 48px) / 968 * 1662);
