@@ -20,6 +20,7 @@
 				"CONTACT": "Contact"
 			},
 			"TOP_BAR": {
+				"BUY_ADRIA_BUTTON": "BUY ADRIA",
 				"ONLY_MOBILE_PLAY": "Play",
 				"METAVERSE": "Metaverse",
 				"NFT": "NFT",
@@ -28,6 +29,16 @@
 				"TEAM": "Team",
 				"DOCUMENTS": "Documents",
 				"CONTACT": "Contact"
+			},
+			"MIDDLE": {
+				"SUB_TITLE": "join the",
+				"MAIN_TITLE": "galactic mission",
+				"PLAY": "Play"
+			}
+		},
+		"SECTIONS": {
+			"GALACTIC_MISSION": {
+				"OPINION": "The world's first game that combines Grand Strategy with Top-Down Shooter in blockchain"
 			}
 		}
     }
