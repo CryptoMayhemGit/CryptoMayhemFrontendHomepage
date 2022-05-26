@@ -23,18 +23,9 @@ const populateHtmlPlugins = (pagesArray) => {
 const pages = populateHtmlPlugins(
     [
         'index',
-        'play',
-        'buyPackage',
-        'buyPackage2',
-        'buyPackage3',
         'legal-compliance',
         'privacy-policy',
-        'staking',
-        'staking2',
-        'stakingPopup',
         'terms-and-conditions',
-        'userProfile',
-        'vesting'
     ]
 );
 //****************************************************
