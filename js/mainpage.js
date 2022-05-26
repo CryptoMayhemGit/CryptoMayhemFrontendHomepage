@@ -200,8 +200,11 @@ addEventListener('DOMContentLoaded', () => {
     });
     const getAdriaSub = document.querySelector('.getAdria .sub');
     if (getAdriaSub) {
-        getAdriaSub.querySelector('.icon-copy').onclick = () => {
-            navigator.clipboard.writeText(getAdriaSub.querySelector('.address').textContent);
+        const iconCopy = getAdriaSub.querySelector('.icon-copy');
+        if(iconCopy) {
+            iconCopy.onclick = () => {
+                navigator.clipboard.writeText(getAdriaSub.querySelector('.address').textContent);
+            }
         }
     }
 });
