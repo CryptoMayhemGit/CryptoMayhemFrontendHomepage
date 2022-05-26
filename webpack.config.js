@@ -25,7 +25,7 @@ const pages = populateHtmlPlugins(
         'index',
         'legal-compliance',
         'privacy-policy',
-        'terms-and-conditions',
+        'terms-and-conditions'
     ]
 );
 //****************************************************
