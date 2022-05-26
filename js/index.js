@@ -3,8 +3,6 @@ import "./components/hexagonNumber"
 import "./components/dragSlider"
 import "./preloader"
 import "./mainpage"
-import "./staking"
-
 
 function updateBg() {
     if (!document.location.search.includes('noNoise'))//for better debuging
@@ -15,8 +13,7 @@ function updateBg() {
     }
     requestAnimationFrame(updateBg)
 }
-
-updateBg()
+updateBg();
 let lastScroll = 0;
 addEventListener('scroll', e => {
 

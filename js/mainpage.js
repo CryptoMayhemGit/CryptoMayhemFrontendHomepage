@@ -7,6 +7,11 @@ addEventListener('DOMContentLoaded', () => {
     dummyRectangle.style.height='100vh';
     document.body.append(dummyRectangle)
 
+    const selectedLang = window.location.pathname.slice(1,3);
+    const langElement = document.querySelector(`#${selectedLang}`);
+    langElement.className = 'isActive';
+
+
     const team = document.querySelector('section.team');
     if (team) {
         let scrollPos, scrollDate = 0;
