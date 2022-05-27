@@ -1,8 +1,8 @@
 import "./components/cutButton"
 import "./components/hexagonNumber"
-import "./components/dragSlider"
 import "./preloader"
 import "./mainpage"
+import "../scss/index.scss"
 
 function updateBg() {
     if (!document.location.search.includes('noNoise'))//for better debuging

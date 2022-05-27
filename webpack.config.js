@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const StaticI18nHtmlPlugin = require('webpack-static-i18n-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 
 //abstract over the multiple htmlWebpackPlugin declarations for each page
@@ -33,8 +34,7 @@ const pages = populateHtmlPlugins(
 module.exports = {
     entry: {
         main: [
-            './js/index.js',
-            './scss/index.scss'
+            './js/index.js'
         ],
     },
     output: {
@@ -61,8 +61,14 @@ module.exports = {
                 test: /\.scss$/,
                 use: [
                 'style-loader',
+                {
+                    loader: MiniCssExtractPlugin.loader,
+                    options: {
+                      esModule: false,
+                    },
+                },
                 'css-loader',
-                'sass-loader'
+                'sass-loader',
                 ]
             },
             {
@@ -75,6 +81,7 @@ module.exports = {
         ]
     },
     plugins: [
+        new MiniCssExtractPlugin(),
         ...pages,
         new StaticI18nHtmlPlugin({
             locale : 'en', // The default locale
