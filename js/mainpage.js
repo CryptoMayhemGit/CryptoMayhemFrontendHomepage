@@ -9,7 +9,7 @@ addEventListener('DOMContentLoaded', () => {
 
     const selectedLang = window.location.pathname.slice(1,3);
     const langElement = document.querySelector(`#${selectedLang}`);
-    langElement.className = 'isActive';
+    if(langElement) { langElement.className = 'isActive' }
 
 
     const team = document.querySelector('section.team');
