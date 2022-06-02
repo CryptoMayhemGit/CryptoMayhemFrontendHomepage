@@ -23,5 +23,9 @@ body {
     padding: 0;
 }
 
-main{
+@media (min-width: 992px) {
+    .sections, .socialLinks, .groupOfSections, .mainMenu, .langSelection, #metaverse, .discover,
+    .getAdria > div, .supply > div, .adriaCorporation > div, .roadmap > div, .ntf-introduction, .list > div, .behindUs > ul {
+        transform: scale(0.8);
+    }
 }
