@@ -1,5 +1,6 @@
 {
-    "INDEX": {
+    "LANGUAGE": "en",
+	"INDEX": {
 		"HEADER": {
 			"LEFT_BAR": {
 				"TWITTER": "Twitter",
@@ -149,5 +150,10 @@
 				"PITCHDECK_CONTENT": "Game design visualisation. It will give you an initial understanding of our ecosystem and a vision of the project."
 			}
 		}
-    }
+    },
+	"FOOTER": {
+		"PRIVACY_POLICY": "Privacy Policy",
+		"TERMS": "Terms & Conditions",
+		"LEGAL_INFO": "Legal Compliance & Information"
+	}
 }
