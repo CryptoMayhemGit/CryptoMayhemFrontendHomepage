@@ -14,6 +14,7 @@
 			"MENU": {
 			    "BUY_ADRIA_BUTTON": "Kup ADRIA",
 				"PLAY": "Zagraj",
+				"TRAILER": "Zwiastun",
 				"METAVERSE": "Metaverse",
 				"NFT": "NFT",
 				"TOKENOMIC": "Tokenomia",
@@ -41,11 +42,11 @@
 					"TEXT1": "Nasze NFT posiada wartość atrybutu w grze. Dzięki temu każdy gracz otrzymuje unikatowe właściwości.",
 					"TEXT2": "Każdy może wyprodukować z kombinacji kilku elementów NFT, swojego oryginalnego Mecha (NFT), aby pokonywać hordy przeciwników w krwawej walce o przetrwanie.",
 					"TEXT3": "Gracze mogą wykorzystywać Drony (NFT) do wydobywania rzadkich surowców i wspierania mecha w walce.",
-					"TEXT4": "Avatar (NFT) i NPC (NFT) jako jednostka mogą posiadać przedmiot (NFT) o określonych wartościach, który polepsza daną profesje.",
+					"TEXT4": "Avatar (NFT) i Robotnik (NFT) jako jednostka mogą posiadać przedmiot (NFT) o określonych wartościach, który polepsza daną profesje.",
 					"TEXT5": "Jednostka przypisana do landu (NFT) pozwala wydobywać surowce do rozwoju swojej cywilizacji."
 				},
 				"END_TITLES": {
-					"TEXT": "Mech / Dron / Broń / Avatar / NPC / Przedmiot / Land"
+					"TEXT": "Mech / Dron / Broń / Avatar / Robotnik / Przedmiot / Land"
 				}
 			},
 			"GET_ADRIA": {
@@ -85,7 +86,7 @@
 				"STAKE_ADRIA_TITLE": "Stake ADRIA",
 				"STAKE_ADRIA_CONTENT": "Pozwala na stakowanie prowincji i przejmowanie nad nimi kontroli na określony czas, w celu pozyskiwania podatków z transakcji dokonywanych pomiędzy graczami w ramach danej przestrzeni. Zarządzanie i staking w zamian za dochody protokołu.",
 				"STAKE_NFT_TITLE": "Stake NFT",
-				"STAKE_NFT_CONTENT": "Stake NFT odbywać się będzie poprzez wykorzystane Avatara lub NPC wraz z przedmiotem, które będą mogły zostać umieszczone na landzie. Takie postępowanie pozwoli na wydobywanie surowców w grze.",
+				"STAKE_NFT_CONTENT": "Stake NFT odbywać się będzie poprzez wykorzystanie Avatara lub Robotnika wraz z przedmiotem, które będą mogły zostać umieszczone na landzie. Takie postępowanie pozwoli na wydobywanie surowców w grze.",
 				"MINT_NFT_TITLE": "Mint NFT",
 				"MINT_NFT_CONTENT": "Oddajemy w Twoje ręce wygląd i atrybuty przyszłego sprzętu mecha. Możesz je skonfigurować w swoim warsztacie i stworzyć swojego własnego unikatowego mecha.",
 				"3D_TDS_TITLE": "3D TDS",
@@ -119,7 +120,7 @@
 				"COMPANY_REGISTRATION": "Rejestracja spółki w Estonii",
 				"WHITEPAPER": "Whitepaper",
 				"ADRIA_PRESALE": "ADRIA przedsprzedaż",
-				"NFT_AVATARS": "NFT Avatars, NPCs i przedmioty na sprzedaż",
+				"NFT_AVATARS": "NFT Avatars, Robotnicy i przedmioty na sprzedaż",
 				"ADRIA_IDO": "ADRIA IDO",
 				"ADRIA_LIQUIDITY": "ADRIA liquidity mining",
 				"ADRIA_EARLY": "ADRIA early staking",

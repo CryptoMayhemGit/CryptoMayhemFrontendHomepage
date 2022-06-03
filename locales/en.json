@@ -14,6 +14,7 @@
 			"MENU": {
 			    "BUY_ADRIA_BUTTON": "Buy ADRIA",
 				"PLAY": "Play",
+				"TRAILER": "Trailer",
 				"METAVERSE": "Metaverse",
 				"NFT": "NFT",
 				"TOKENOMIC": "Tokenomic",
@@ -30,7 +31,7 @@
 		},
 		"SECTIONS": {
 			"GALACTIC_MISSION": {
-				"OPINION": "The world's first game that combines Grand Strategy with Top-Down Shooter in blockchain"
+				"OPINION": "The world's first gaming ecosystem that combines Grand Strategy with Top-Down Shooter in blockchain"
 			},
 			"METAVERSE": {
 				"FIRST_TEXT": "An exciting new metaverse in which the combination of bloody combat with an elaborate economic and strategic model becomes a reality, thanks to blockchain technology. The basic idea behind Crypto Mayhem is to provide players with one big game that combines Grand Strategy with Top-Down Shooter. The strategy game is about developing your colony on an alien planet, where micro-management of digital goods and currency affects the environment according to a designed model.",
@@ -41,11 +42,11 @@
 					"TEXT1": "Our NFT is an attribute value in the game. Unique attributes for each player.",
 					"TEXT2": "Everyone can produce their original Mech (NFT) from a combination of several elements NFT, to defeat hordes of enemies in a bloody battle for survival.",
 					"TEXT3": "The Drone (NFT) mines a rare resource and supports the mecha in battle.",
-					"TEXT4": "Avatar (NFT) and NPC (NFT) as a unit can have an item (NFT) with certain values that improve the profession.",
+					"TEXT4": "Avatar (NFT) and Worker (NFT) as a unit can have an item (NFT) with certain values that improve the profession.",
 					"TEXT5": "Combining heroes per land (NFT) allows you to extract resources to develop your civilization."
 				},
 				"END_TITLES": {
-					"TEXT": "Mech / Dron / Weapon / Avatar / NPC / Item / Land"
+					"TEXT": "Mech / Dron / Weapon / Avatar / Worker / Item / Land"
 				}
 			},
 			"GET_ADRIA": {
@@ -85,7 +86,7 @@
 				"STAKE_ADRIA_TITLE": "Stake ADRIA",
 				"STAKE_ADRIA_CONTENT": "Management and staking in exchange for protocol income. Allows you to stak city zones and take control of them for a set period of time, in order to raise taxes from transactions made between players within the space.",
 				"STAKE_NFT_TITLE": "Stake NFT",
-				"STAKE_NFT_CONTENT": "Stake NFT will be done by using an Avatar or NPC with an NFT item that can be placed in the land. This will allow for the extraction of resources in the game.",
+				"STAKE_NFT_CONTENT": "Stake NFT will be done by using an Avatar or Worker with an NFT item that can be placed in the land. This will allow for the extraction of resources in the game.",
 				"MINT_NFT_TITLE": "Mint NFT",
 				"MINT_NFT_CONTENT": "We put the look and attributes of future mech equipment in your hands. You can configure them in your workshop and create your own unique mech.",
 				"3D_TDS_TITLE": "3D TDS",
@@ -119,7 +120,7 @@
 				"COMPANY_REGISTRATION": "Company registration in Estonia",
 				"WHITEPAPER": "Whitepaper",
 				"ADRIA_PRESALE": "ADRIA presale",
-				"NFT_AVATARS": "NFT Avatars, NPCs and items for sale",
+				"NFT_AVATARS": "NFT Avatars, Workers and items for sale",
 				"ADRIA_IDO": "ADRIA IDO",
 				"ADRIA_LIQUIDITY": "ADRIA liquidity mining",
 				"ADRIA_EARLY": "ADRIA early staking",
