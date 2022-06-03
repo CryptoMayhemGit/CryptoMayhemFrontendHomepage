@@ -196,14 +196,14 @@ section.galacticMission {
 }
 
 .animate {
-    transition: transform 0.5s, opacity 0.5s;
-    transform: translateY(200px);
+    transition: transform 1s, opacity 1s;
+    transform: translateY(50px);
     opacity: 0;
 }
 
 .active {
     opacity: 1 !important;
-    transform: translateX(0) !important;
+    transform: translateY(0) !important;
 }
 
 section.galacticMission-video {
