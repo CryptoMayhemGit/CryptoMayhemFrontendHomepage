@@ -23,8 +23,8 @@ body {
     padding: 0;
 }
 
-@media (min-width: 992px) {
-    .sections, .socialLinks, .groupOfSections, .mainMenu, .langSelection, #metaverse, .discover,
+@media (min-width: 1441px) and (max-width: 1920px) {
+    .sections, .socialLinks, .galacticMission-opinion > div, .mainMenu, .langSelection, #metaverse, .discover,
     .getAdria > div, .supply > div, .adriaCorporation > div, .roadmap > div, .ntf-introduction, .list > div, .behindUs > ul {
         transform: scale(0.8);
     }
