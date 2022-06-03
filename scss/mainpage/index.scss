@@ -1,6 +1,6 @@
 .groupOfSections {
     overflow: hidden;
-    margin-bottom: -196px;
+    //margin-bottom: -196px;
     @media(max-width: 900px) {
         margin-bottom: 0px;
     }
@@ -11,7 +11,7 @@
         width: 1662px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: 192px auto;
+        margin: 100px auto 50px;
     }
     .description {
         @if ($left) {

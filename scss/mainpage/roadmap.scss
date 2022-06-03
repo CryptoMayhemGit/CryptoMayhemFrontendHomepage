@@ -1,7 +1,7 @@
 
 .roadmap {
     width: 1625px;
-    margin: auto;
+    margin: 0px auto 50px;
     position: relative;
 
 
@@ -95,6 +95,10 @@
                 background-color: #16b338;
             }
         }
+    }
+
+    @media (min-width: 1921px) {
+        margin: 100px auto 50px;
     }
 
     @media (max-width: 1750px) {
