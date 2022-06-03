@@ -61,38 +61,43 @@
                     <span data-t="INDEX.HEADER.MENU.PLAY"></span></a>
             </li>
             <li>
-                <a href="#metaverse">
+                <a href="#trailer">
                     <hexagon-number>2</hexagon-number>
+                    <span data-t="INDEX.HEADER.MENU.TRAILER"></span></a>
+            </li>
+            <li>
+                <a href="#metaverse">
+                    <hexagon-number>3</hexagon-number>
                     <span data-t="INDEX.HEADER.MENU.METAVERSE"></span></a>
             </li>
             <li>
                 <a href="#nft">
-                    <hexagon-number>3</hexagon-number>
+                    <hexagon-number>4</hexagon-number>
                     <span data-t="INDEX.HEADER.MENU.NFT"></span></a>
             </li>
             <li>
                 <a href="#tokenomic">
-                    <hexagon-number>4</hexagon-number>
+                    <hexagon-number>5</hexagon-number>
                     <span data-t="INDEX.HEADER.MENU.TOKENOMIC"></span></a>
             </li>
             <li>
                 <a href="#roadmap">
-                    <hexagon-number>5</hexagon-number>
+                    <hexagon-number>6</hexagon-number>
                     <span data-t="INDEX.HEADER.MENU.ROADMAP"></span></a>
             </li>
             <li>
                 <a href="#team">
-                    <hexagon-number>6</hexagon-number>
+                    <hexagon-number>7</hexagon-number>
                     <span data-t="INDEX.HEADER.MENU.TEAM"></span></a>
             </li>
             <li>
                 <a href="#documents">
-                    <hexagon-number>7</hexagon-number>
+                    <hexagon-number>8</hexagon-number>
                     <span data-t="INDEX.HEADER.MENU.DOCUMENTS"></span></a>
             </li>
             <li>
                 <a href="#contact">
-                    <hexagon-number>8</hexagon-number>
+                    <hexagon-number>9</hexagon-number>
                     <span data-t="INDEX.HEADER.MENU.CONTACT"></span></a>
             </li>
         </ul>
@@ -103,6 +108,9 @@
             <ul>
                 <li class="onlyMobile">
                     <a href="#galacticMission"><span data-t="INDEX.HEADER.MENU.PLAY"></span></a>
+                </li>
+                <li>
+                    <a href="#trailer"><span data-t="INDEX.HEADER.MENU.TRAILER"></span></a>
                 </li>
                 <li>
                     <a href="#metaverse"><span data-t="INDEX.HEADER.MENU.METAVERSE"></span></a>
@@ -152,27 +160,16 @@
         <cut-button data-t="INDEX.HEADER.MIDDLE.PLAY"></cut-button>
     </section>
     <div class="groupOfSections">
-        <section class="galacticMission-video animate">
+        <section class="galacticMission-video animate" id="trailer">
             <div class="video-wrapper">
 				<div class="video-container">
 					<iframe class="video-position" src="https://www.youtube.com/embed/TNfrTuSQM9U?autoplay=0&showinfo=0&controls=1&iv_load_policy=3&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
-        <section class="galacticMission-opinion animate">
-            <div>
-                <p><span data-t="INDEX.SECTIONS.GALACTIC_MISSION.OPINION"></span></p>
-
-                <picture class="image">
-                    <source type="image/webp" srcset="../img/galacticMissionBg.webp">
-                    <source type="image/png" srcset="../img/galacticMissionBg.jpg">
-                    <img src="../img/galacticMissionBg.webp">
-                </picture>
-            </div>
-        </section>
     </div>
-    <section class="metaverse animate">
-        <div id="metaverse">
+    <section class="metaverse animate" id="metaverse">
+        <div>
             <div class="description">
                 <h2>
                     <span class="mainTitle">Metaverse</span>
@@ -196,6 +193,20 @@
                     <img src="../img/mech.jpg">
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="galacticMission-opinion animate">
+        <div>
+            <p><span data-t="INDEX.SECTIONS.GALACTIC_MISSION.OPINION"></span></p>
+
+            <div class="image-wrapper">
+                <picture class="image">
+                    <source type="image/webp" srcset="../img/galacticMissionBg.webp">
+                    <source type="image/png" srcset="../img/galacticMissionBg.jpg">
+                    <img src="../img/galacticMissionBg.webp">
+                </picture>
+            </div>
+
         </div>
     </section>
     <section class="nft animate" id="nft">
@@ -288,7 +299,8 @@
             </picture>
         </div>
     </section>
-    <section class="supply animate" id="tokenomic">
+    <span id="tokenomic"></span>
+    <section class="supply animate">
         <div>
             <h2>
                 <span data-t="INDEX.SECTIONS.SUPPLY.TOTAL_SUPPLY"></span>
@@ -410,7 +422,7 @@
                     <span class="title" data-t="INDEX.SECTIONS.SUPPLY.TEAM"></span>
                     <div>
                         <span data-t="INDEX.SECTIONS.SUPPLY.SHARED.LOCK"></span>: 24 <span data-t="INDEX.SECTIONS.SUPPLY.SHARED.TWO_MONTHS"></span><br>
-                        <span data-t="INDEX.SECTIONS.SUPPLY.SHARED.UNLOCKED"></span>: 12 <span data-t="INDEX.SECTIONS.SUPPLY.SHARED.MENY_MONTHS"></span> / <span data-t="INDEX.SECTIONS.SUPPLY.SHARED.BLOCK"></span>
+                        <span data-t="INDEX.SECTIONS.SUPPLY.SHARED.UNLOCKED"></span>: 24 <span data-t="INDEX.SECTIONS.SUPPLY.SHARED.MENY_MONTHS"></span> / <span data-t="INDEX.SECTIONS.SUPPLY.SHARED.BLOCK"></span>
                     </div>
                 </li>
                 <li data-supply="10">
@@ -418,7 +430,7 @@
                     <span class="title" data-t="INDEX.SECTIONS.SUPPLY.RESERVE"></span>
                     <div>
                         <span data-t="INDEX.SECTIONS.SUPPLY.SHARED.LOCK"></span>: 12 <span data-t="INDEX.SECTIONS.SUPPLY.SHARED.MENY_MONTHS"></span><br>
-                        <span data-t="INDEX.SECTIONS.SUPPLY.SHARED.UNLOCKED"></span>: 12 <span data-t="INDEX.SECTIONS.SUPPLY.SHARED.MENY_MONTHS"></span> / <span data-t="INDEX.SECTIONS.SUPPLY.SHARED.BLOCK"></span>
+                        <span data-t="INDEX.SECTIONS.SUPPLY.SHARED.UNLOCKED"></span>: 36 <span data-t="INDEX.SECTIONS.SUPPLY.SHARED.MENY_MONTHS"></span> / <span data-t="INDEX.SECTIONS.SUPPLY.SHARED.BLOCK"></span>
                     </div>
                 </li>
                 <li data-supply="11">
