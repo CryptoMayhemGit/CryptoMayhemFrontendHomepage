@@ -135,6 +135,12 @@
 
 @media (min-width: 1921px) {
     .video-full {
+        transform:scale(1.5);
+    }
+}
+
+@media (min-width: 2480px) {
+    .video-full {
         transform:scale(4);
     }
 }
