@@ -63,7 +63,7 @@
 					"WEEKS": "tygodnie",
 					"SINGLE_MONTH": "miesiąc",
 					"TWO_MONTHS": "mesiące",
-					"MENY_MONTHS": "miesięcy",
+					"MANY_MONTHS": "miesięcy",
 					"LOCK": "Zablokowane",
 					"UNLOCKED": "Odblokowanie",
 					"EXCHANGES_INFO": "* płynność początkowa na DEX i CEX"

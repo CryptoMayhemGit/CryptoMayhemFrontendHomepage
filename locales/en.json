@@ -63,7 +63,7 @@
 					"WEEKS": "weeks",
 					"SINGLE_MONTH": "month",
 					"TWO_MONTHS": "months",
-					"MENY_MONTHS": "months",
+					"MANY_MONTHS": "months",
 					"LOCK": "Lock",
 					"UNLOCKED": "Unlocked",
 					"EXCHANGES_INFO": "* listing liquidity DEX and CEX"

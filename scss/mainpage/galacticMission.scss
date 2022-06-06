@@ -349,6 +349,48 @@ section.galacticMission-opinion {
         margin: 100px auto 50px !important;
     }
 
+    .description {
+        z-index: 1;
+		
+		.gif-container {
+			align-items: center; 
+			display: flex;
+		}
+		
+        .video-wrapper {
+            position: relative;
+            width: 160px;
+            height: 160px;
+			margin: 0px 0px 0px 40px;
+
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                background: url("../img/frame9.svg") no-repeat 50% 50%;
+                background-size: contain;
+            }
+        }
+
+        video {
+            width: 160px;
+            height: 160px;
+            mask-image: url("../img/frame9Mask.svg");
+            mask-repeat: no-repeat;
+            mask-position: 50% 50%;
+            mask-size: contain;
+            -webkit-mask-image: url("../img/frame9Mask.svg");
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-position: 50% 50%;
+            -webkit-mask-size: contain;
+        }
+    }
+
     p {
         margin-left: 148px;
         font-family: Nulshock;
@@ -414,6 +456,18 @@ section.galacticMission-opinion {
         }
     }
     @media(max-width: 700px) {
+
+        .description {
+			.gif-container {
+				align-items: center; 
+				display: block;
+			}
+			
+				
+			.video-wrapper {
+				margin: 40px 0px 0px 40px;
+			}
+		}
 	
         p {
             margin: 0 48px -70vw 48px;
