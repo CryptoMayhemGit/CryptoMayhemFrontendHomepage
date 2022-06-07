@@ -156,14 +156,20 @@ section.metaverse {
     @media(max-width: 700px) {
 
 		.description {
-			.gif-container {
-				align-items: center; 
-				display: block;
-			}
-			
-				
+
 			.video-wrapper {
 				margin: 40px 0px 0px 40px;
+                width: 100px;
+                height: 100px;
+
+                video {
+                    width: 100px;
+                    height: 100px;
+                }
+
+                &:first-child{
+                    margin-left: 0px;
+                }
 			}
 		}
 
