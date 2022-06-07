@@ -392,7 +392,7 @@ section.galacticMission-opinion {
     }
 
     p {
-        margin-left: 148px;
+        margin-left: 40px;
         font-family: Nulshock;
         font-size: 48px;
         font-weight: 700;
@@ -480,15 +480,19 @@ section.galacticMission-opinion {
             }
         }
     }
+    @media(max-width: 900px) {
+        .gif-container {
+            justify-content: space-between;
+        }
+
+        .video-wrapper {
+            margin-left: 0 !important;
+        }
+    }
+
     @media(max-width: 700px) {
 		.description {
-
-            .gif-container {
-                justify-content: center;
-            }
-
 			.video-wrapper {
-				margin: 40px 0px 0px 40px;
                 width: 100px;
                 height: 100px;
 
