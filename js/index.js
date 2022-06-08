@@ -8,7 +8,7 @@ import "../scss/index.scss"
 function updateBg() {
     if (!document.location.search.includes('noNoise'))//for better debuging
     {
-        for (const element of document.querySelectorAll('html, .headerBg')) {
+        for (const element of document.querySelectorAll('html, .headerBg, #section-wrapper')) {
             element.style.backgroundPosition = `${Math.round(Math.random() * 1000)}px ${Math.round(Math.random() * 1000)}px`
         }
     }

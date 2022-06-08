@@ -37,11 +37,11 @@ header {
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
     align-items: center;
-    position: absolute;
+    position: fixed;
     right: 0;
     left: 0;
     top: 0;
-    z-index: 1000;
+    z-index: 0;
 
 
     @media(min-width: 1200.01px) {
