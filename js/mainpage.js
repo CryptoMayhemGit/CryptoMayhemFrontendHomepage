@@ -210,7 +210,7 @@ addEventListener('DOMContentLoaded', () => {
 
     //trigger animation
     scrollTrigger('.animate', {
-        rootMargin: '-200px',
+        rootMargin: '-100px',
     })
 });
 
