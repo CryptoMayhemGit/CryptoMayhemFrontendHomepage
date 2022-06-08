@@ -1,5 +1,5 @@
 
-main > footer {
+footer {
     hr {
         border: none;
         height: 26px;
@@ -82,9 +82,8 @@ main > footer {
     .finalFooter {
         max-width: 1625px;
         margin: 96px auto 48px auto;
-        padding-left: 36px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
 
 		.finalFooterCenter
 		{
@@ -96,7 +95,7 @@ main > footer {
             flex-direction: column;
             place-content: center;
             flex: 0 0 auto;
-            min-width: 200px;
+            width: 300px;
         }
 
         @media (max-width: 800px) {
