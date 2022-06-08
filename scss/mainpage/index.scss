@@ -2,16 +2,14 @@
     background: #1c1b1b url(../img/background.png);
     width: 100%;
     margin-top: 100vh;
-    --mask: 
-        linear-gradient(#000 0 0) bottom/100% calc(100% - 30px) no-repeat,
-        conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) top/60.00px 30px repeat-x;
-    -webkit-mask: var(--mask);
-    mask: var(--mask);
+    padding-bottom: 20px;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .groupOfSections {
     overflow: hidden;
-    //margin-bottom: -196px;
+
     @media(max-width: 900px) {
         margin-bottom: 0px;
     }
@@ -102,11 +100,11 @@
     position: fixed;
     top: 0;
     width: 100%;
-    /*--mask: 
+    --mask: 
         linear-gradient(#000 0 0) top/100% calc(100% - 28px) no-repeat,
         conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/60.00px 30px repeat-x;
     -webkit-mask: var(--mask);
-    mask: var(--mask);*/
+    mask: var(--mask);
     z-index: -1;
 }
 

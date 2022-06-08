@@ -11,6 +11,7 @@ section.galacticMission {
     left: 0;
     height: 100vh;
     box-sizing: border-box;
+    z-index: -2;
 
     .subTitle {
         font-size: 71px;
