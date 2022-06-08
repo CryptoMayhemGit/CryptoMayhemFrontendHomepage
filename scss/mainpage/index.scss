@@ -105,7 +105,7 @@
         conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/60.00px 30px repeat-x;
     -webkit-mask: var(--mask);
     mask: var(--mask);
-    z-index: -1;
+    z-index: -2;
 }
 
 .video-full, .video-mobile {
