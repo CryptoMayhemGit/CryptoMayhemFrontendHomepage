@@ -144,7 +144,6 @@ addEventListener('DOMContentLoaded', () => {
     if (hamburger) {
         hamburger.onclick = () => {
             document.body.classList.toggle('isHamburgerOpen');
-            window.scrollTo({left: 0, top: 0, behavior: "smooth"})
         }
     }
     const supply = document.querySelector('section.supply');
@@ -162,7 +161,7 @@ addEventListener('DOMContentLoaded', () => {
         function scrollToSupply(supplyId) {
             let rect = supply.querySelector(`ul [data-supply="${supplyId}"]`).getBoundingClientRect();
             if (innerWidth <= 380) {
-                scrollBy({top: rect.top - 269, behavior: "auto"});
+                scrollBy({top: rect.top - 329, behavior: "auto"});
             } else if (innerWidth <= 1250) {
                 scrollBy({top: rect.top - 323, behavior: "auto"});
             }

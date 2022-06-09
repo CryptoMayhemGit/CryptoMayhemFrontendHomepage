@@ -53,6 +53,7 @@ header {
             margin-top: 0;
         }
         &.isFloating {
+			margin: 0 20px;
             top: 57px;
             position: sticky;
             //top: calc(var(--scrollHeader) * -100px);
@@ -133,15 +134,10 @@ header {
     }
 
     @media(max-width: 1700px) {
-        margin: 57px 25px;
         max-width: none;
         @media(min-width: 1200.01px) {
             @media (max-height: 760px) {
                 margin-top: 0;
-            }
-            &.isFloating {
-
-                margin: 57px 25px -163px;
             }
         }
 
@@ -187,7 +183,7 @@ header {
         }
     }
 
-    @media(max-width: 1350px) {
+    @media(max-width: 1470px) {
         &.has-mainMenu-few {
             grid-template-columns: max-content 1fr max-content;
 
