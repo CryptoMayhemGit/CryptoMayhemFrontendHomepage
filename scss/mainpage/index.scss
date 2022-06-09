@@ -32,12 +32,12 @@
     }
     .image-wrapper {
         margin-left: -1000px;
-        margin-right: -167px;
+        margin-right: 0px;
         display: grid;
         justify-content: end;
 
         @if ($left) {
-            margin-left: -167px;
+            margin-left: 0px;
             margin-right: -1000px;
             justify-content: start;
         }
@@ -80,8 +80,8 @@
             display: block;
             grid-column: 1;
             grid-row: 1;
-            width: 1432px;
-            height: 832px;
+            width: 1697px;
+            height: 902px;
             z-index: -1;
         }
     }

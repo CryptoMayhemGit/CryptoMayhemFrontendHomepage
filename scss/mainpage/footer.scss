@@ -1,5 +1,7 @@
 
 footer {
+	padding-bottom: 5px;
+
     hr {
         border: none;
         height: 26px;
@@ -95,16 +97,23 @@ footer {
             flex-direction: column;
             place-content: center;
             flex: 0 0 auto;
-            width: 300px;
         }
 
         @media (max-width: 800px) {
+		
+		
+			> * {
+				place-content: baseline;
+				flex: auto;
+				width: 100%;
+			}
+		
             margin: 0;
             padding: 0;
             display: block;
             text-align: center;
             > * {
-                margin: 40px 36px;
+                margin: 40px 0px;
             }
         }
     }

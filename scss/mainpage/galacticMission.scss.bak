@@ -75,7 +75,7 @@ section.galacticMission {
         margin: 40px;
         font-weight: 600;
         line-height: 2;
-        filter: drop-shadow(0 3px 26px rgba(#c83a1a, 0.36));
+        filter: drop-shadow(0 3px 25px rgba(230, 9, 9, 0.5));
         position: relative;
         z-index: 2000;
 
