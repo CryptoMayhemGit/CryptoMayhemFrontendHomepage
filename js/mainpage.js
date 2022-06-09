@@ -181,21 +181,26 @@ addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('aside.sections a[href^="#"], header nav a[href^="#"]').forEach(x => {
         x.onclick = e => {
-            let topMargin;
-            if ((x.attributes.href.value == '#nft' || x.attributes.href.value == '#tokenomic'))
-                topMargin = 0;
-            else if (x.attributes.href.value == '#papers')
-                topMargin = 76;
-            else
-                topMargin = 48;
-            window.scroll({
-                top: document.querySelector(x.attributes.href.value).getBoundingClientRect().top + window.scrollY - topMargin,
-                behavior: "smooth"
-            })
-            history.pushState(null, null, x.attributes.href.value)
-            e.preventDefault();
-
-            document.body.classList.remove('isHamburgerOpen');
+            console.log(x.attributes.href.value);
+            if(x.attributes.href.value !== '#galacticMission'){
+                let topMargin;
+                if ((x.attributes.href.value == '#nft' || x.attributes.href.value == '#tokenomic'))
+                    topMargin = 0;
+                else if (x.attributes.href.value == '#papers')
+                    topMargin = 76;
+                else
+                    topMargin = 48;
+                window.scroll({
+                    top: document.querySelector(x.attributes.href.value).getBoundingClientRect().top + window.scrollY - topMargin,
+                    behavior: "smooth"
+                })
+                history.pushState(null, null, x.attributes.href.value)
+                e.preventDefault();
+    
+                document.body.classList.remove('isHamburgerOpen');   
+            } else {
+                window.scrollTo({top: 0, behavior: "smooth"});
+            }
         }
     });
     const getAdriaSub = document.querySelector('.getAdria .sub');
