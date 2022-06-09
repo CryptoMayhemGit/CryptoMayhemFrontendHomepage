@@ -81,7 +81,6 @@ addEventListener('DOMContentLoaded', () => {
                     fraction = (-nft.getBoundingClientRect().bottom + innerHeight) / (nft.getBoundingClientRect().height - document.querySelector('.ntf-introduction').clientHeight) + 1
                 }
                 let fraction2 = fractionTransform(fraction);
-                console.log('fraction', fraction, fraction2)
                 horizontalScroll.scrollLeft = fraction2 * (horizontalScroll.scrollWidth - nft.clientWidth);
                 verticalLast = new Date();
                 horizontalLast = 0;
@@ -96,7 +95,6 @@ addEventListener('DOMContentLoaded', () => {
                 let fraction2 = horizontalScroll.scrollLeft / (horizontalScroll.scrollWidth - nft.clientWidth);
 
                 let fraction = fractionTransformReverse(fraction2);
-                console.log('fraction', fraction, fraction2)
                 let newTop = -fraction * (nft.getBoundingClientRect().height - innerHeight);
                 let delta = newTop - nft.getBoundingClientRect().top;
                 if (innerHeight < 1200) {
@@ -181,7 +179,6 @@ addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('aside.sections a[href^="#"], header nav a[href^="#"]').forEach(x => {
         x.onclick = e => {
-            console.log(x.attributes.href.value);
             if(x.attributes.href.value !== '#galacticMission'){
                 let topMargin;
                 if ((x.attributes.href.value == '#nft' || x.attributes.href.value == '#tokenomic'))
@@ -200,6 +197,9 @@ addEventListener('DOMContentLoaded', () => {
                 document.body.classList.remove('isHamburgerOpen');   
             } else {
                 window.scrollTo({top: 0, behavior: "smooth"});
+                history.pushState(null, null, x.attributes.href.value)
+                e.preventDefault();
+                document.body.classList.remove('isHamburgerOpen');   
             }
         }
     });

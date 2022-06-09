@@ -1,5 +1,7 @@
 
 section.getAdria {
+	width: 1640px;
+	margin: 0 auto;
     overflow: hidden;
     //margin-top: -200px;
     //margin-bottom: -200px;
@@ -94,6 +96,7 @@ section.getAdria {
     }
 
     @media (max-width: 1500px) {
+		width: auto;
         > div {
             grid-template-columns: 1fr;
         }
