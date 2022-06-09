@@ -3,6 +3,7 @@
     width: 1625px;
     margin: 0px auto 50px;
     position: relative;
+	margin-top: 153px;
 
 
     .drone {
@@ -99,12 +100,14 @@
 
     @media (min-width: 1921px) {
         margin: 100px auto 50px;
+		margin-top: 153px;
     }
 
     @media (max-width: 1750px) {
         width: auto;
         margin-left: 36px;
         margin-right: 36px;
+		margin-top: 153px;
     }
     @media (max-width: 1600px) {
         .drone {

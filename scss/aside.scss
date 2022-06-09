@@ -50,12 +50,12 @@ aside.socialLinks {
             }
 
             .icon-discord::before {
-                font-size: 24px;
+                font-size: 20px;
                 margin-left: 1px;
             }
 
             .icon-medium::before {
-                font-size: 21px;
+                font-size: 18px;
                 margin-left: 3px;
             }
 
@@ -202,7 +202,7 @@ aside.sections {
                 &::part(path1) {
                     fill: white;
                     // transform-origin: 50% 50%;
-                    transform: translate(16px, 16px) scale(.4);
+                    transform: translate(16px, 16px) scale(.3);
                     transition: 300ms all;
                 }
 
@@ -211,7 +211,7 @@ aside.sections {
                     stroke: white;
                     fill: transparent;
                     transition: 300ms all;
-                    transform: translate(16px, 16px) scale(1);
+                    transform: translate(16px, 16px) scale(.6);
                 }
 
             }

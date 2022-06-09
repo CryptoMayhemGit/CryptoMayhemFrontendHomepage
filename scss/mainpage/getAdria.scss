@@ -7,26 +7,29 @@ section.getAdria {
 
     > div {
         display: grid;
-        grid-template-columns: 1fr 1fr;
         min-height: 600px;
-        width: 1625px;
         margin: auto;
         justify-items: stretch;
         align-items: center;
         position: relative;
+        margin-right: 348px;
+        width: auto;
+        margin-left: 72px;
+        grid-template-columns: 810px 1fr;
     }
 
     .content {
-        // width: 600px;
+        padding-left: 28px;
     }
 
     > div > picture {
+        right: calc(25% - 1256px + 1700px / 4);
         position: absolute;
-        right: calc(50% - 1256px);
+        right: calc(62% - 1256px);
         margin-top: 48px;
 
         img {
-            width: 100%;
+            width: 60%;
         }
 
     }
@@ -42,7 +45,7 @@ section.getAdria {
 
     p {
         grid-column: 1;
-        font-size: 21px;
+        font-size: 14px;
         line-height: 29px;
     }
 
@@ -90,18 +93,7 @@ section.getAdria {
         }
     }
 
-    @media (max-width: 1700px) {
-        > div {
-            width: auto;
-            margin-left: 72px;
-            margin-right: 72px;
-            grid-template-columns: 810px 1fr;
-        }
-        > div > picture {
-            right: calc(25% - 1256px + 1700px / 4);
-        }
-    }
-    @media (max-width: 1150px) {
+    @media (max-width: 1500px) {
         > div {
             grid-template-columns: 1fr;
         }
