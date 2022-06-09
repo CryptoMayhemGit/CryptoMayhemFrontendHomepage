@@ -11,8 +11,7 @@ section.galacticMission {
     left: 0;
     height: 100vh;
     box-sizing: border-box;
-    z-index: -2;
-
+	
     .subTitle {
         font-size: 71px;
         color: transparent;
@@ -40,13 +39,13 @@ section.galacticMission {
 
     cut-button {
 		--border: #767676;//#C83A1A;//TODO Disable Button
-		--background: #767676;//#C83A1A;//TODO Disable Button
+		--background: #1c1b1b;//#C83A1A;//TODO Disable Button
         width: 278px;
         box-sizing: border-box;
         margin: 140px 40px 40px;
         font-weight: 600;
         line-height: 2;
-        filter: drop-shadow(0 3px 26px rgba(#c83a1a, 0.36));
+        filter: drop-shadow(0 3px 25px rgba(230, 9, 9, 0.5));
         position: relative;
         z-index: 2000;
 
@@ -352,6 +351,10 @@ section.galacticMission-opinion {
 
     .description {
         z-index: 1;
+		grid-column: 1;
+		grid-row: 1;
+		
+        padding: 0 48px;
 		
 		.gif-container {
 			align-items: center; 
@@ -395,7 +398,7 @@ section.galacticMission-opinion {
     p {
         margin-left: 40px;
         font-family: Nulshock;
-        font-size: 48px;
+        font-size: 42px;
         font-weight: 700;
         line-height: 1.12;
 
@@ -418,53 +421,34 @@ section.galacticMission-opinion {
 
             object-position: 0%;
         }
-
-        img, &::after {
-            //width: 1954px;
-            //height: 832px;
-        }
     }
 
     @media(max-width: 1700px) {
         > div {
             overflow: hidden;
             width: auto;
-            grid-template-columns: 1fr 830px;
-        }
-        .image {
-            img, &::after {
-                width: 1954/1700*100vw;
-                height: 1099/1700*100vw;
-            }
         }
 
     }
-    @media(max-width: 1600px) {
-        .image {
-            img {
-                object-position: -150px;
-            }
-        }
+	
+    @media(max-width: 1570px) {    
+		.image-wrapper 
+		{
+			margin-right: 0px;
+		}
     }
-    @media(max-width: 1300px) {
+	
+    @media(max-width: 1400px) {
         > div {
             grid-template-columns: 1fr;
-            margin: 100px 0;
-        }
-        p {
-            font-size: 6vw;
-            margin-left: 0;
-            margin-top: -150px;
         }
         .description {
-            grid-column: 1;
-            grid-row: 2;
             padding: 0 48px;
         }
         .image-wrapper {
+			margin-left: 100px;
             grid-column: 1;
             grid-row: 1;
-            margin-bottom: -20vw;
         }
         .image {
             margin: 0;
@@ -472,28 +456,16 @@ section.galacticMission-opinion {
             justify-self: center;
             mask-image: linear-gradient(0deg, transparent 0, black 50%);
             -webkit-mask-image: linear-gradient(0deg, transparent 0, black 50%);
-
-            img, &::after {
-                width: 1954/1700*130vw;
-                height: 1099/1700*130vw;
-                //max-width: 1954/1700*900px;
-                //max-height: 1099/1700*900px;
-            }
         }
     }
-    @media(max-width: 900px) {
-        .gif-container {
-            justify-content: space-between;
-        }
-
-        .video-wrapper {
-            margin-left: 0 !important;
-        }
-    }
-
+	
     @media(max-width: 700px) {
+		
+		margin-top: -81px;
 		.description {
+            padding: 266px 15px 16px 15px;
 			.video-wrapper {
+				margin: 40px 0px 0px 40px;
                 width: 100px;
                 height: 100px;
 
@@ -508,17 +480,77 @@ section.galacticMission-opinion {
 			}
 		}
 
-        .image {
-            img, &::after {
-                width: 1954px * .5;
-                height: 1099px * .5;
-            }
-        }
-
     }
+	
     @media(max-width: 500px) {
+	
         .description {
-            padding: 0 36px;
+            padding: 106px 15px 16px 15px;
+        }
+		
+		p 
+		{
+			font-size: 32px;
+		}
+		margin-top: -107px;
+        .description {
+            padding: 266px 15px 16px 15px;
+			
+			.gif-container {
+				.video-wrapper {
+					margin: 20px 0px 0px 20px;
+				}
+			}
         }
     }
+	
+    @media(max-width: 390px) 
+	{
+		p 
+		{
+			font-size: 22px;
+		}
+		
+		.description 
+		{
+			.gif-container 
+			{
+				.video-wrapper:last-child  
+				{
+					display: none;
+				}
+			}
+		}
+	}
+	
+    @media(max-width: 340px) 
+	{
+        .description {
+            padding: 0px 15px 16px 15px;
+        }
+	}
+	
+    @media(max-width: 260px) 
+	{
+		p 
+		{
+			margin-left: 0px;
+			font-size: 12px;
+		}
+		
+		.description 
+		{
+			.gif-container 
+			{
+				.video-wrapper:nth-child(2)
+				{
+					display: none;
+				}
+			}
+		}
+		
+        .description {
+            padding: 0px 15px 16px 15px;
+        }
+	}
 }
