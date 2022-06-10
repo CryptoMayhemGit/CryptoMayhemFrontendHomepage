@@ -43,6 +43,9 @@ header {
     top: 0;
     z-index: 1000;
 
+    @media(max-width: 1700px) {
+        padding: 0 30px;
+    }
 
     @media(min-width: 1200.01px) {
         &.fixed {
