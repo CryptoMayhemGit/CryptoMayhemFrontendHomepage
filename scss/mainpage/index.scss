@@ -108,6 +108,8 @@
     -webkit-mask: var(--mask);
     mask: var(--mask);
     z-index: -2;
+    transition: opacity 1s linear;
+    opacity: 1;
 }
 
 .video-full, .video-mobile {
