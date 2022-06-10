@@ -195,7 +195,7 @@ section.galacticMission {
         min-height: 600px;
     }
 	
-	@media (orientation:landscape) 
+	@media (max-width: 900px) and (orientation:landscape) 
 	{   
 	    .subTitle {
             font-size: calc(11px / 2 + 71 / 1200 * 50vw);
