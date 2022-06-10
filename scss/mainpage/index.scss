@@ -110,6 +110,13 @@
     z-index: -2;
     transition: opacity 1s linear;
     opacity: 1;
+
+    video {
+        object-fit: cover;
+        width: 100vw;
+        min-height: 100vh;
+
+    }
 }
 
 .video-full, .video-mobile {
@@ -122,8 +129,6 @@
 @media (max-width: 767px) {
     .video-mobile {
         display: block;
-        //height: 100vh;
-        width: 102vw;
     }
 }
 
@@ -133,37 +138,6 @@
     }
 }
 
-@media (orientation: portrait){
-    //.video-full, .video-mobile {
-    .video-full {
-        height: 100vh;
-    }
-}
-
-
-@media (min-width: 520px) and (max-width: 767px) {
-    .video-mobile {
-        transform: scale(2);
-    }
-}
-
-@media (min-width: 1900px) {
-    .video-full {
-        transform:scale(1.05);
-    }
-}
-
-@media (min-width: 1921px) {
-    .video-full {
-        transform:scale(1.5);
-    }
-}
-
-@media (min-width: 2480px) {
-    .video-full {
-        transform:scale(4);
-    }
-}
 
 @import "./galacticMission";
 @import "./metaverse";
