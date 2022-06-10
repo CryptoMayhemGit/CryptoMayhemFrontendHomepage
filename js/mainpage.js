@@ -160,9 +160,12 @@ addEventListener('DOMContentLoaded', () => {
 
         function scrollToSupply(supplyId) {
             let rect = supply.querySelector(`ul [data-supply="${supplyId}"]`).getBoundingClientRect();
-            if (innerWidth <= 380) {
+            if (innerWidth <= 380) 
+			{
                 scrollBy({top: rect.top - 329, behavior: "auto"});
-            } else if (innerWidth <= 1250) {
+            } else if (window.innerHeight <= 400 && !!navigator.maxTouchPoints == true) {
+                scrollBy({top: rect.top - 129, behavior: "auto"});
+            }else if (innerWidth <= 1250) {
                 scrollBy({top: rect.top - 323, behavior: "auto"});
             }
         }
