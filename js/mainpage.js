@@ -251,8 +251,8 @@ function updateAsideSections() {
 
 function updateAsideSocials() {
     const asideLinks = document.querySelector('aside.socialLinks');
-    if (asideLinks && document.querySelector('main > footer')) {
-        const footerPosition = (document.querySelector('main > footer')?.getBoundingClientRect().top ?? 0) / innerHeight
+    if (asideLinks && document.querySelector('#contact')) {
+        const footerPosition = document.querySelector('#contact').getBoundingClientRect().top ? document.querySelector('#contact').getBoundingClientRect().top : 0  / innerHeight
         if (footerPosition > 0.6) {
             asideLinks.style.display = '';
             asideLinks.style.setProperty('--opacity', 1)
