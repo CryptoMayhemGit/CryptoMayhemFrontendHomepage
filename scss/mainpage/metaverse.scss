@@ -220,9 +220,9 @@ section.metaverse {
             padding: 1263px 15px 16px 15px;
         }
 	}
-
+	
     @media(max-width: 900px) {
-        margin-top: -450px;
+        margin-top: -300px;
     
         .description {
             margin-top: 190px;
@@ -230,5 +230,37 @@ section.metaverse {
         }
     }
 
+    @media(max-width: 700px) {
+        margin-top: -450px;
+    }
+	
+	
+    @media(max-width: 370px) {
+        margin-top: -595px;
+    }
+	
+    @media(max-width: 325px) {
+        margin-top: -960px;
+		
+        .description {
+            margin-top: 112px;
+			padding: 961px 15px 16px 15px;
+        }
+    }
+	
+    @media(max-width: 260px) {
+        margin-top: -1248px;
+		
+        .description {
+            margin-top: 375px;
+			padding: 1083px 15px 16px 15px;
+        }
+    }
+
+
+	@media (max-width: 900px) and (orientation:landscape) 
+	{
+        margin-top: -300px;
+	}
 }
 

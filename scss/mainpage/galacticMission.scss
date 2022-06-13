@@ -361,6 +361,11 @@ section.galacticMission-video {
             padding: 10px 24px 10px 10px;
         }
     }
+
+	@media (max-width: 900px) and (orientation:landscape) 
+	{
+        margin: 160px auto 64px auto;
+	}
 }
 
 
