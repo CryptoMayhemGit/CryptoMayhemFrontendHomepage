@@ -327,7 +327,7 @@ section.nft {
             height: 750px;
             position: relative;
             display: block;
-            align-self: end;
+            align-self: flex-end;
 
             .image:not(.dummyClass) {
                 position: absolute;
