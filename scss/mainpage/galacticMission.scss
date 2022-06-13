@@ -237,6 +237,7 @@ section.galacticMission-video {
     background: url(../img/frame1.svg);
     margin: 100px auto 50px;
     position: relative;
+    z-index: 1000;
 
     .video-container {
 		position: relative;
