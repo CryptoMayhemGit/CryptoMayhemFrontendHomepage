@@ -221,10 +221,19 @@ section.supply {
     }
     @media(max-width: 450px) {
 	
-	
+		 ul 
+		 {
+			li 
+			{
+				div {
+					margin: 0 0 0 25px;
+				}
+			}
+		}
+		
         li {
             .title {
-                margin: auto !important;
+                margin: 0 0 0 0px !important;
             }
 		}
 	
