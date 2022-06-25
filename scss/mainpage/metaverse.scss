@@ -97,8 +97,8 @@ section.metaverse {
             object-position: 0%;
 
             @media(max-width: 1700px) and (min-width: 900px) {
-                object-position: 60%;
-                object-fit: none;
+                object-position: -60%;
+				object-fit: contain;
             }
         }
     }
