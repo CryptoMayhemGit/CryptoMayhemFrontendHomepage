@@ -47,7 +47,8 @@
 				},
 				"END_TITLES": {
 					"TEXT": "Mech / Dron / Broń / Avatar / Robotnik / Przedmiot / Land"
-				}
+				},
+				"DRONE": "DRON"
 			},
 			"GET_ADRIA": {
 				"TITLE": "Przetrwaj <br> i zdobywaj ADRIA",

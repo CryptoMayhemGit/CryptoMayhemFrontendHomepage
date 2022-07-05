@@ -46,8 +46,9 @@
 					"TEXT5": "Combining heroes per land (NFT) allows you to extract resources to develop your civilization."
 				},
 				"END_TITLES": {
-					"TEXT": "Mech / Dron / Weapon / Avatar / Worker / Item / Land"
-				}
+					"TEXT": "Mech / Drone / Weapon / Avatar / Worker / Item / Land"
+				},
+				"DRONE": "DRONE"
 			},
 			"GET_ADRIA": {
 				"TITLE": "Survive to get ADRIA",
