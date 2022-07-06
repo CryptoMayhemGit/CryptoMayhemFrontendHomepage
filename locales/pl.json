@@ -47,7 +47,8 @@
 				},
 				"END_TITLES": {
 					"TEXT": "Mech / Dron / Broń / Avatar / Robotnik / Przedmiot / Land"
-				}
+				},
+				"DRONE": "DRON"
 			},
 			"GET_ADRIA": {
 				"TITLE": "Przetrwaj <br> i zdobywaj ADRIA",
@@ -134,7 +135,7 @@
 				"BASIC_PLANET": "Rozwój podstawowej infrastruktury planety",
 				"NFT_LEGENDARY_MECHS": "NFT Legendarne Mechy - sprzedaż",
 				"MVP_TDS": "MVP Top-Down Shooter (wczesny dostęp)",
-				"MVP_GS": "MVP Grant Strategy (early access)",
+				"MVP_GS": "MVP Grand Strategy",
 				"ADRIA_STAKING": "ADRIA staking do kontroli prowincji",
 				"TDS_MISSIONS": "Top-Down Shooter: Nowe misje",
 				"TDS_WEAPONS": "Top-Down Shooter: Nowe bronie",
