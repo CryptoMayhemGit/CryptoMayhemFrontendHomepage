@@ -220,12 +220,29 @@ section.supply {
         }
     }
     @media(max-width: 450px) {
+	
+		 ul 
+		 {
+			li 
+			{
+				div {
+					margin: 0 0 0 25px;
+				}
+			}
+		}
+		
+        li {
+            .title {
+                margin: 0 0 0 0px !important;
+            }
+		}
+	
         h2 {
             strong {
                 font-size: 32px;
                 min-height: 36px;
-                margin-right: -24px;
-                margin-left: -24px;
+                margin-right: 0px;
+                margin-left: 0px;
             }
         }
         .graph {
@@ -237,7 +254,7 @@ section.supply {
             text-align: center;
 
             svg {
-                width: calc(280px - 48px * var(--scroll));
+                width: calc(230px - 48px * var(--scroll));
                 height: calc(280px - 48px * var(--scroll));
                 margin: 20px -20px;
                 display: inline-block;

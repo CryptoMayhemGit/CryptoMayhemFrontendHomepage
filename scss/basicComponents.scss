@@ -1,22 +1,9 @@
 @mixin standardButton($borderColor:#fff, $background:#000) {
-    // border: 1px solid $borderColor;
     position: relative;
     display: inline-block;
     padding: 5px;
     background: url(../img/fragments/buttonSide.svg) no-repeat;
 
-    //&:before{
-    //    position: absolute;
-    //    border: 1px solid;
-    //    display: block;
-    //    content: '';
-    //    left: 0;
-    //    right: 0;
-    //    top: 0;
-    //    bottom: 0;
-    //    transition: transform 300ms ease-in-out;
-    //    z-index: -1;
-    //}
     &:after {
         position: absolute;
         border: 1px solid;
@@ -34,6 +21,34 @@
             transform: translateX(10px) translateY(-10px);
         }
     }
+}
+
+.loader-mech
+{
+    display: block;
+    width: 250px;
+    height: 152px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -76px;
+    margin-left: -125px;
+}
+
+.loader-top-position-item-two
+{
+	width: 200px !important;  
+    height: 200px !important;  
+	margin-top: -100px !important;  
+    margin-left: -100px !important;  
+}
+
+.loader-top-position-item-one
+{
+	width: 360px !important;  
+    height: 360px !important;  
+	margin-top: -180px !important;  
+    margin-left: -180px !important;  
 }
 
 cut-button {

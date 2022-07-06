@@ -84,6 +84,10 @@
     @media (max-width: 550px) {
         margin-left: 24px;
         margin-right: 24px;
+		
+        .list {
+			margin: 0px 0px;
+        }
 
     }
     @media(max-width: 380px) {
