@@ -26,7 +26,21 @@
 			"MIDDLE": {
 				"SUB_TITLE": "Dołącz do",
 				"MAIN_TITLE": "galaktycznej <br> misji",
-				"PLAY": "Wkrótce"
+				"PLAY": "Wkrótce",
+				"JOIN_BUTTON": "DOŁĄCZ DO WHITELIST"
+			},
+			"WISH_LIST_MODAL": {
+				"HEADER": "Dołącz do Whitelist",
+				"WALLET_ADDRESS": "Wprowadź adres swojego portfela",
+				"JOIN_BUTTON": "Dołącz",
+				"MSG0": "Parametr Wallet jest pusty.",
+				"MSG1": "Taki kod istnieje w nasze bazie danych.",
+				"MSG2": "Wallet dodany do listy.",
+				"MSG3": "To nie jest wallet z Ten set.",
+				"MSG4": "To nie jest poprawna składnia portfela.",
+				"MSG5": "Serwer Tenset nie odpowiada.",
+				"CLOSE": "Zamknij",
+				"TENSET_LINK": "PRZEJDŹ DO TENSET"
 			}
 		},
 		"SECTIONS": {

@@ -37,18 +37,18 @@
 
 .loader-top-position-item-two
 {
-	width: 200px !important;  
-    height: 200px !important;  
-	margin-top: -100px !important;  
-    margin-left: -100px !important;  
+	width: 200px !important;
+    height: 200px !important;
+	margin-top: -100px !important;
+    margin-left: -100px !important;
 }
 
 .loader-top-position-item-one
 {
-	width: 360px !important;  
-    height: 360px !important;  
-	margin-top: -180px !important;  
-    margin-left: -180px !important;  
+	width: 360px !important;
+    height: 360px !important;
+	margin-top: -180px !important;
+    margin-left: -180px !important;
 }
 
 cut-button {
@@ -134,6 +134,50 @@ h4 {
     font-family: NulShock;
     font-size: 32px;
     letter-spacing: 0.48px;
+}
+
+h5 {
+    font-family: NulShock;
+    font-size: 24px;
+    letter-spacing: 0.48px;
+}
+
+h6 {
+    font-family: NulShock;
+    font-size: 18.72px;
+    letter-spacing: 0.48px;
+}
+
+.mt-1 {
+    margin-top: 1em;
+}
+
+.mt-2 {
+    margin-top: 2em;
+}
+
+.mt-3 {
+    margin-top: 3em;
+}
+
+.ml-a {
+    margin-left: auto;
+}
+
+.mr-a {
+    margin-right: auto;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-1 {
+    margin-bottom: 1em;
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 .subtitle {

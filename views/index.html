@@ -4,19 +4,43 @@
     <meta charset="UTF-8">
     <title>Crypto Mayhem</title>
     <meta name="description" data-attr-t content-t="SITE_DESCRIPTION">
-    <meta name="robots" content="index, follow"> 
+    <meta name="robots" content="index, follow">
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
     <link rel="icon" type="image/png" href="../img/favicon.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 <body>
+<div class="modal" id="modal">
+    <div class="modal-header">
+        <button data-close-button id="close-modal" class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+        <form>
+            <div class="form-header" id="form-header">
+                <p>Dołącz do whitelist</p>
+            </div>
+            <div class="form-control" id="form-control">
+                <label for="wallet-address" data-t="INDEX.HEADER.WISH_LIST_MODAL.WALLET_ADDRESS"></label>
+                <div class="input-wrapper mt-1">
+                    <textarea placeholder="0x3F939356d15952b92495848667e40AE36F74813c" rows="3" id="wallet-address" required></textarea>
+                </div>
+            </div>
+            <div id="modal-foot" class="w-100 mt-3 mb-0 ml-a mr-a modal-foot">
+                <cut-button id="closeBtn" class="buyAdriaButton pointer display-none" data-t="INDEX.HEADER.WISH_LIST_MODAL.CLOSE"></cut-button>
+                <cut-button id="sendBtn" class="buyAdriaButton pointer" data-t="INDEX.HEADER.WISH_LIST_MODAL.JOIN_BUTTON"></cut-button>
+                <cut-button id="tensetLink" class="display-none" href="https://www.tenset.io/" target="_blank" data-t="INDEX.HEADER.WISH_LIST_MODAL.TENSET_LINK"></cut-button>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="overlay"></div>
 <div id="qLoverlay">
     <div id="qLbar_wrap" class="dfd_preloader_css_animation">
         <div id="dfd-preloader-animation" class="dfd-preloader-style-15">
             <span class="loader-top-position-item-one item-one"></span>
             <span class="loader-top-position-item-two item-two"></span>
-        </div>                
+        </div>
     </div>
 	<img class="loader-mech"  src="../img/icons/CryptoMayhem_loader.gif">
 </div>
@@ -158,7 +182,7 @@
     <section class="galacticMission">
         <span class="subTitle" data-t="INDEX.HEADER.MIDDLE.SUB_TITLE"></span>
         <span class="mainTitle mainTitle-long" data-t="INDEX.HEADER.MIDDLE.MAIN_TITLE"></span>
-        <cut-button data-t="INDEX.HEADER.MIDDLE.PLAY"></cut-button>
+        <cut-button data-modal-target="#modal" id="open-modal" data-t="INDEX.HEADER.MIDDLE.JOIN_BUTTON" id="wish-list"></cut-button>
     </section>
     <div id="section-wrapper">
         <div class="groupOfSections">
