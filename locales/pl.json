@@ -38,7 +38,9 @@
 				"MSG2": "Wallet dodany do listy.",
 				"MSG3": "To nie jest wallet z Ten set.",
 				"MSG4": "To nie jest poprawna składnia portfela.",
-				"MSG5": "Serwer Tenset nie odpowiada."
+				"MSG5": "Serwer Tenset nie odpowiada.",
+				"CLOSE": "Zamknij",
+				"TENSET_LINK": "PRZEJDŹ DO TENSET"
 			}
 		},
 		"SECTIONS": {

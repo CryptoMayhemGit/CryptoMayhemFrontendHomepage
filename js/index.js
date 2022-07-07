@@ -8,6 +8,8 @@ import "../scss/index.scss"
 let video = document.querySelector('.video-container');
 let galacticMission = document.querySelector('.galacticMission');
 let sendBtn = document.getElementById('sendBtn');
+const closeBtn = document.getElementById('closeBtn');
+const tensetLink = document.getElementById('tensetLink');
 const closeModalBtn = document.querySelector('.close-button');
 const modal = document.getElementById('modal');
 
@@ -59,7 +61,7 @@ function translateMessage(selectedLang, messageCode) {
 	if (selectedLang == 'en') {
 		switch(messageCode){
 			case 'MSG0': {
-				message = 'Waller parameter is empty.';
+				message = 'Sended wallet addres should not be empty.';
 				header = 'Ups! Something goes wrong!';
 				btn = 'Close';
 				headerClass = 'error';
@@ -82,7 +84,7 @@ function translateMessage(selectedLang, messageCode) {
 				}
 			case 'MSG3':
 				{
-					message = 'Only Tenset subscribers ';
+					message = 'Only Tenset subscribers can join for plans:';
 					header = 'You cannot add to Whitelist';
 					btn = 'Go to Tenset';
 					headerClass = 'error';
@@ -116,7 +118,7 @@ function translateMessage(selectedLang, messageCode) {
 	} else {
 		switch(messageCode){
 			case 'MSG0': {
-				message = 'Parametr wallet jest pusty.';
+				message = 'Przesłany adres portfela nie powinien być pusty';
 				header = 'Ups! Coś poszło nie tak!';
 				btn = 'Zamknij';
 				headerClass = 'error';
@@ -139,11 +141,12 @@ function translateMessage(selectedLang, messageCode) {
 				}
 			case 'MSG3':
 				{
-					message = 'Dołączyc mogą tylko subskrybenci wymienonwych planów Tenset';
+					message = 'Dołączyc mogą tylko subskrybenci wymienonwych planów Tenset:';
 					submessage = 'Chcesz zostać subskrybentem?';
 					header = 'Nie możesz dołączyć do Whitelist';
 					btn = 'PRZEJDŹ DO TENSET';
 					headerClass = 'error';
+					tensetUrl = 'https://www.tenset.io/'
 					break;
 				}
 			case 'MSG4':
@@ -199,6 +202,7 @@ async function addWishList() {
 	const formHeader = document.getElementById('form-header');
 	const modalFoot = document.getElementById('modal-foot');
 	const sendBtn = document.getElementById('sendBtn');
+	const closeBtn = document.getElementById('closeBtn');
 
 	if (modalInfo.submessage === '') {
 		formControl.innerHTML = `<div class="modal-content">${modalInfo.message}</div>`;
@@ -219,11 +223,12 @@ async function addWishList() {
 
 	formHeader.innerHTML = `<div class="${modalInfo.headerClass}">${modalInfo.header}</div>`;
 
-	if (modalInfo.tensetUrl) {
-		modalFoot.innerHTML = `<a href=${modalInfo.tensetUrl}>${modalInfo.methodBtn}</a>`
+	if (modalInfo.tensetUrl === '') {
+		sendBtn.classList.add('display-none');
+		closeBtn.classList.remove('display-none');
 	} else {
 		sendBtn.classList.add('display-none');
-		modalFoot.insertAdjacentHTML('beforeend',`<cut-button onclick="${modalInfo.methodBtn}" class="buyAdriaButton pointer">${modalInfo.btn}</cut-button>`);
+		tensetLink.classList.remove('display-none');
 	}
 }
 
@@ -239,6 +244,12 @@ sendBtn.addEventListener('click', event => {
 	} catch(error) {
 		console.log(error.message);
 	}
+});
+
+closeBtn.addEventListener('click', () => {
+	const modal = document.getElementById('modal');
+	closeModal(modal);
+	setDefaultModal();
 });
 
 const openModalButtons = document.getElementById('open-modal');
@@ -281,8 +292,8 @@ function setDefaultModal() {
 		<textarea placeholder="0x3F939356d15952b92495848667e40AE36F74813c" rows="3" id="wallet-address" required></textarea>
 	</div>`;
 	sendBtn.classList.remove('display-none');
-	const child = modalFoot.childNodes.item(modalFoot.childNodes.length - 1);
-	modalFoot.removeChild(child);
+	closeBtn.classList.add('display-none');
+	tensetLink.classList.add('display-none');
 }
 
 function openModal(modal) {

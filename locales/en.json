@@ -38,7 +38,9 @@
 				"MSG2": "Walled added to list.",
 				"MSG3": "This is not Ten set wallet.",
 				"MSG4": "This is not proper wallet address.",
-				"MSG5": "Tenset server not response."
+				"MSG5": "Tenset server not response.",
+				"CLOSE": "Close",
+				"TENSET_LINK": "GO TO TENSET"
 			}
 		},
 		"SECTIONS": {
