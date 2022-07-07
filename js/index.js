@@ -189,7 +189,7 @@ function translateMessage(selectedLang, messageCode) {
 
 async function addWishList() {
 	const method= 'POST';
-	const url = 'http://mayhemwhitelistapi.azurewebsites.net/WhiteList';
+	const url = 'https://mayhemwhitelistapi.azurewebsites.net/WhiteList';
 	const walletAddress = document.getElementById('wallet-address').value;
 	const wallet = {
 		"wallet": walletAddress
