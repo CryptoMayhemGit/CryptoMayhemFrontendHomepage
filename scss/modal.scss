@@ -1,0 +1,210 @@
+// .modal {
+//     display: none;
+//     position: fixed;
+//     z-index: 1;
+//     left: 0;
+//     top: 0;
+//     width: 100%;
+//     height: 100%;
+//     overflow: auto;
+//     background-color: rgba(166, 166, 166, 0.7);
+// }
+
+// .active {
+//     display: block;
+// }
+
+//   /* Modal Content/Box */
+//   .modal-content {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     background-color: #282828;
+//     position: relative;
+//     margin: 15% auto; /* 15% from the top and centered */
+//     padding: 20px;
+//     border: 1px solid #888;
+//     width: 25%;
+
+//     .close-button {
+//         position: absolute;
+//         top: 1em;
+//         right: 1em;
+//         cursor: pointer;
+//         border: none;
+//         outline: none;
+//         background: none;
+//         font-size: 1.75em;
+//         font-weight: bold;
+//     }
+
+//     form {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-content: space-between;
+//         margin: auto;
+//         width: 75%;
+
+//         .form-header {
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             font-size: 1.5em;
+//             font-weight: bold;
+//         }
+
+//         .form-control {
+//             display: flex;
+//             flex-direction: column;
+//             width: 100%;
+
+//             .input-wrapper {
+//                 textarea {
+//                     border: none;
+//                     width: 100%;
+//                     resize: none;
+//                 }
+//             }
+
+//             label {
+//                 align-self: center;
+//                 font-size: 1.2em;
+//             }
+//           }
+//     }
+
+//     @media(max-width: 1200px) {
+//         width: 50%;
+//     }
+
+//     @media(max-width: 500px) {
+//         width: 70%;
+//     }
+//   }
+
+.response {
+    display: block;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    background-color: #282828;
+    z-index: 1;
+    width: 15%;
+    padding: 1em 2em 2.5em 2em;
+    min-height: 20em;
+
+    &.active-modal {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    &-header {
+        background-color: #282828;
+        position: relative;
+        height: 3em;
+
+        .close-button {
+            position: absolute;
+            top: 0.5em;
+            right: 0.5em;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            background: none;
+            font-size: 1.75em;
+            font-weight: bold;
+          }
+    }
+
+    &-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        background-color: #282828;
+        width: 100%;
+
+        form {
+            height: 100%;
+            width: 100%;
+
+            .form-header {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+
+            .form-control {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                min-height: 8em;
+
+                .input-wrapper {
+                    textarea {
+                        border: none;
+                        width: 100%;
+                        resize: none;
+                    }
+                }
+
+                label {
+                    align-self: center;
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 1200px) {
+        width: 50%;
+    }
+
+    @media(max-width: 500px) {
+        width: 70%;
+    }
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.modal-content {
+    margin: 1em auto 0 auto;
+}
+
+.success {
+    color: #00D62E;
+}
+
+.error {
+    color: #FF4246;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(166, 166, 166, 0.7);
+    pointer-events: none;
+}
+
+#overlay.active-modal {
+    opacity: 1;
+    pointer-events: all;
+}
