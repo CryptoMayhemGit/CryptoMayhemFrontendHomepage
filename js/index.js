@@ -7,11 +7,9 @@ import "../scss/index.scss"
 
 let video = document.querySelector('.video-container');
 let galacticMission = document.querySelector('.galacticMission');
-const sendBtn = document.getElementById('sendBtn');
+let sendBtn = document.getElementById('sendBtn');
 const closeModalBtn = document.querySelector('.close-button');
 const modal = document.getElementById('modal');
-const wishListBtn = document.getElementById('wish-list');
-
 
 function updateHideOrShowVideo() {
 	HideOrShowVideo();
@@ -56,7 +54,8 @@ function translateMessage(selectedLang, messageCode) {
 	let btn = '';
 	let methodBtn = '';
 	let headerClass = ''
-	let tensetUrl = null;
+	let tensetUrl = '';
+	let submessage = '';
 	if (selectedLang == 'en') {
 		switch(messageCode){
 			case 'MSG0': {
@@ -141,6 +140,7 @@ function translateMessage(selectedLang, messageCode) {
 			case 'MSG3':
 				{
 					message = 'Dołączyc mogą tylko subskrybenci wymienonwych planów Tenset';
+					submessage = 'Chcesz zostać subskrybentem?';
 					header = 'Nie możesz dołączyć do Whitelist';
 					btn = 'PRZEJDŹ DO TENSET';
 					headerClass = 'error';
@@ -175,6 +175,7 @@ function translateMessage(selectedLang, messageCode) {
 
 	return {
 		message: message,
+		submessage: submessage,
 		header: header,
 		headerClass: headerClass,
 		btn: btn,
@@ -197,17 +198,34 @@ async function addWishList() {
 	const formControl = document.getElementById('form-control');
 	const formHeader = document.getElementById('form-header');
 	const modalFoot = document.getElementById('modal-foot');
+	const sendBtn = document.getElementById('sendBtn');
 
-	formControl.innerHTML = `<div class="modal-content">${modalInfo.message}</div>`;
+	if (modalInfo.submessage === '') {
+		formControl.innerHTML = `<div class="modal-content">${modalInfo.message}</div>`;
+	} else {
+		formControl.innerHTML = `
+		<div class="modal-content">
+		${modalInfo.message}
+		<ul class="list-style-none">
+			<li>- TGLP</li>
+			<li>- Infinity premium</li>
+			<li>- TGLP NFT Holders</li>
+		</ul>
+		<div class="b-line"></div>
+		<div class="mt-2">${modalInfo.submessage}</div>
+		</div>
+		`
+	}
+
 	formHeader.innerHTML = `<div class="${modalInfo.headerClass}">${modalInfo.header}</div>`;
 
 	if (modalInfo.tensetUrl) {
 		modalFoot.innerHTML = `<a href=${modalInfo.tensetUrl}>${modalInfo.methodBtn}</a>`
 	} else {
-		modalFoot.innerHTML = `<cut-button onclick="${modalInfo.methodBtn}" class="buyAdriaButton pointer">${modalInfo.btn}</cut-button>`;
+		sendBtn.classList.add('display-none');
+		modalFoot.insertAdjacentHTML('beforeend',`<cut-button onclick="${modalInfo.methodBtn}" class="buyAdriaButton pointer">${modalInfo.btn}</cut-button>`);
 	}
 }
-
 
 closeModalBtn.addEventListener('click', () => {
 	modal.classList.remove('active');
@@ -254,14 +272,17 @@ function setDefaultModal() {
 	const selectedLang = window.location.pathname.slice(1,3);
 	console.log(selectedLang);
 	const modalInfo = translateMessage(selectedLang, 'none');
+	const sendBtn = document.getElementById('sendBtn');
 
-	formControl.innerHTML = `<p>${modalInfo.header}</p>`;
-	formHeader.innerHTML = `
+	formHeader.innerHTML = `<p>${modalInfo.header}</p>`;
+	formControl.innerHTML = `
 	<label for="wallet-address">${modalInfo.message}</label>
 	<div class="input-wrapper mt-1">
 		<textarea placeholder="0x3F939356d15952b92495848667e40AE36F74813c" rows="3" id="wallet-address" required></textarea>
 	</div>`;
-	modalFoot.innerHTML = `<cut-button id="sendBtn" class="buyAdriaButton pointer">${modalInfo.btn}</cut-button>`;
+	sendBtn.classList.remove('display-none');
+	const child = modalFoot.childNodes.item(modalFoot.childNodes.length - 1);
+	modalFoot.removeChild(child);
 }
 
 function openModal(modal) {
