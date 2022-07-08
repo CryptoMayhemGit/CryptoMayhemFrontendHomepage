@@ -38,14 +38,14 @@ section.galacticMission {
   }
 
   cut-button {
-    --border: #767676; //#C83A1A;//TODO Disable Button
+    --border: #16b338; //#C83A1A;//TODO Disable Button
     --background: #1c1b1b; //#C83A1A;//TODO Disable Button
     width: 278px;
     box-sizing: border-box;
     margin: 140px 40px 40px;
     font-weight: 600;
     line-height: 2;
-    filter: drop-shadow(0 3px 25px rgba(230, 9, 9, 0.5));
+    filter: drop-shadow(0 3px 25px #16b338);
     position: relative;
     z-index: 2000;
 
