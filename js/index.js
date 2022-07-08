@@ -11,6 +11,7 @@ let sendBtn = document.getElementById('sendBtn');
 const closeBtn = document.getElementById('closeBtn');
 const tensetLink = document.getElementById('tensetLink');
 const closeModalBtn = document.querySelector('.close-button');
+const validation = document.getElementById('validation');
 const modal = document.getElementById('modal');
 
 function updateHideOrShowVideo() {
@@ -61,56 +62,57 @@ function translateMessage(selectedLang, messageCode) {
 	if (selectedLang == 'en') {
 		switch(messageCode){
 			case 'MSG0': {
-				message = 'Sended wallet addres should not be empty.';
 				header = 'Ups! Something goes wrong!';
+				message = 'Sended wallet addres should not be empty.';
 				btn = 'Close';
 				headerClass = 'error';
 				break;
 			}
 			case 'MSG1': {
-				message = 'You can buy ADRIA token in presale.';
 				header = 'You joined earlier to Whitelist';
+				message = 'You can buy ADRIA token in presale.';
 				btn = 'Close ';
 				headerClass = 'success';
 				break;
 			}
 			case 'MSG2':
 				{
-					message = 'You can buy ADRIA token in presale';
 					header = 'You joined to Whitelist';
+					message = 'You can buy ADRIA token in presale.';
 					btn = 'Close';
 					headerClass = 'success';
 					break;
 				}
 			case 'MSG3':
 				{
-					message = 'Only Tenset subscribers can join for plans:';
 					header = 'You cannot add to Whitelist';
-					btn = 'Go to Tenset';
+					message = 'Only subscribers of the listed Tenset plans can join:';
+					submessage = 'Want to become a subscriber?';
+					btn = 'GO TO TENSET';
 					headerClass = 'error';
+					tensetUrl = 'https://www.tenset.io/'
 					break;
 				}
 			case 'MSG4':
 				{
-					message = 'This is not correct wallet address. Please check. ';
 					header = 'Not correct wallet address';
+					message = 'This is not correct wallet address. Please check and try again.';
 					btn = 'Close';
 					headerClass = 'error';
 					break;
 				}
 			case 'MSG5':
 				{
-					message = 'Tenset server not response. Please try later.';
 					header = 'Ups! Something goes wrong!';
+					message = 'Tenset server not response. Please try later.';
 					btn = 'Close';
-					headerClass = 'error',
-					tensetUrl = 'https://www.tenset.io/'
+					headerClass = 'error';
 					break;
 				}
 			default:
 				{
 					header = 'Join to Whitelist',
-					message = 'Type your wallet address',
+					message = 'Type your wallet address.',
 					btn = 'Join'
 					break;
 				}
@@ -118,15 +120,15 @@ function translateMessage(selectedLang, messageCode) {
 	} else {
 		switch(messageCode){
 			case 'MSG0': {
-				message = 'Przesłany adres portfela nie powinien być pusty';
 				header = 'Ups! Coś poszło nie tak!';
+				message = 'Przesłany adres portfela nie powinien być pusty.';
 				btn = 'Zamknij';
 				headerClass = 'error';
 				break;
 			}
 			case 'MSG1': {
-				message = 'Bedziesz mógł kupić token ADRIA w przedsprzedaży';
 				header = ' Dołączyłeś już wcześniej do Whitelist';
+				message = 'Bedziesz mógł kupić token ADRIA w przedsprzedaży.';
 				btn = 'Zamknij';
 				headerClass = 'success';
 				break;
@@ -141,9 +143,9 @@ function translateMessage(selectedLang, messageCode) {
 				}
 			case 'MSG3':
 				{
+					header = 'Nie możesz dołączyć do Whitelist';
 					message = 'Dołączyc mogą tylko subskrybenci wymienonwych planów Tenset:';
 					submessage = 'Chcesz zostać subskrybentem?';
-					header = 'Nie możesz dołączyć do Whitelist';
 					btn = 'PRZEJDŹ DO TENSET';
 					headerClass = 'error';
 					tensetUrl = 'https://www.tenset.io/'
@@ -151,8 +153,8 @@ function translateMessage(selectedLang, messageCode) {
 				}
 			case 'MSG4':
 				{
-					message = 'To nie jest poprawna składnia portfela';
 					header = 'Ups! Coś poszło nie tak!';
+					message = 'To nie jest poprawna składnia portfela';
 					btn = 'Zamknij';
 					methodBtn = 'closeModalResponse';
 					headerClass = 'error';
@@ -160,8 +162,8 @@ function translateMessage(selectedLang, messageCode) {
 				}
 			case 'MSG5':
 				{
-					message = 'Serwer Tenset nie odpowiada. Proszę spróbować później.';
 					header = 'Ups! Coś poszło nie tak!';
+					message = 'Serwer Tenset nie odpowiada. Proszę spróbować później.';
 					btn = 'Zamknij';
 					headerClass = 'error';
 					break;
@@ -169,7 +171,7 @@ function translateMessage(selectedLang, messageCode) {
 			default:
 				{
 					header = 'Dołącz do Whitelist',
-					message = 'Wprowadź adres swojego portfela',
+					message = 'Wprowadź adres swojego portfela.',
 					btn = 'Dołącz'
 					break;
 				}
@@ -188,19 +190,28 @@ function translateMessage(selectedLang, messageCode) {
 }
 
 async function addWishList() {
+	const spinner = document.getElementById('spinner');
+	const form = document.getElementById('wallet-form');
 	const method= 'POST';
 	const url = 'https://mayhemwhitelistapi.azurewebsites.net/WhiteList';
-	const walletAddress = document.getElementById('wallet-address').value;
+
+	let walletAddress = document.getElementById('wallet-address').value;
 	const wallet = {
 		"wallet": walletAddress
 	};
+
 	const selectedLang = window.location.pathname.slice(1,3);
+	spinner.classList.remove('display-none');
+	form.classList.add('display-none');
+
 	const response = await sendHttpRequest(method, url, wallet);
+
+	spinner.classList.add('display-none');
+	form.classList.remove('display-none');
 
 	const modalInfo = translateMessage(selectedLang, response.messageCode);
 	const formControl = document.getElementById('form-control');
 	const formHeader = document.getElementById('form-header');
-	const modalFoot = document.getElementById('modal-foot');
 	const sendBtn = document.getElementById('sendBtn');
 	const closeBtn = document.getElementById('closeBtn');
 
@@ -211,9 +222,9 @@ async function addWishList() {
 		<div class="modal-content">
 		${modalInfo.message}
 		<ul class="list-style-none">
-			<li>- TGLP</li>
-			<li>- Infinity premium</li>
-			<li>- TGLP NFT Holders</li>
+			<li>TGLP</li>
+			<li>Infinity premium</li>
+			<li>TGLP NFT Holders</li>
 		</ul>
 		<div class="b-line"></div>
 		<div class="mt-2">${modalInfo.submessage}</div>
@@ -252,6 +263,10 @@ closeBtn.addEventListener('click', () => {
 	setDefaultModal();
 });
 
+tensetLink.addEventListener('click', () => {
+	window.open('https://www.tenset.io/', "_blank");
+});
+
 const openModalButtons = document.getElementById('open-modal');
 const closeModalButtons = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
@@ -279,9 +294,7 @@ closeModalButtons.forEach(button => {
 function setDefaultModal() {
 	const formControl = document.getElementById('form-control');
 	const formHeader = document.getElementById('form-header');
-	const modalFoot = document.getElementById('modal-foot');
 	const selectedLang = window.location.pathname.slice(1,3);
-	console.log(selectedLang);
 	const modalInfo = translateMessage(selectedLang, 'none');
 	const sendBtn = document.getElementById('sendBtn');
 
