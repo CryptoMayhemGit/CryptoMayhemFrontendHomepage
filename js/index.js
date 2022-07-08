@@ -144,7 +144,7 @@ function translateMessage(selectedLang, messageCode) {
 			case 'MSG3':
 				{
 					header = 'Nie możesz dołączyć do Whitelist';
-					message = 'Dołączyc mogą tylko subskrybenci wymienonwych planów Tenset:';
+					message = 'Dołączyc mogą tylko subskrybenci wymienionych planów Tenset:';
 					submessage = 'Chcesz zostać subskrybentem?';
 					btn = 'PRZEJDŹ DO TENSET';
 					headerClass = 'error';
