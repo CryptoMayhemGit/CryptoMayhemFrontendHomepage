@@ -16,20 +16,21 @@
         <button data-close-button id="close-modal" class="close-button">&times;</button>
     </div>
     <div class="modal-body">
-        <form>
+        <div class="loader display-none" id="spinner">Loading...</div>
+        <form id="wallet-form">
             <div class="form-header" id="form-header">
-                <p>Dołącz do whitelist</p>
+                <p data-t="INDEX.HEADER.WISH_LIST_MODAL.HEADER"></p>
             </div>
             <div class="form-control" id="form-control">
                 <label for="wallet-address" data-t="INDEX.HEADER.WISH_LIST_MODAL.WALLET_ADDRESS"></label>
                 <div class="input-wrapper mt-1">
-                    <textarea placeholder="0x3F939356d15952b92495848667e40AE36F74813c" rows="3" id="wallet-address" required></textarea>
+                    <textarea placeholder="0x3F939356d15952b92495848667e40AE36F74813c" rows="3" id="wallet-address"></textarea>
                 </div>
             </div>
             <div id="modal-foot" class="w-100 mt-3 mb-0 ml-a mr-a modal-foot">
-                <cut-button id="closeBtn" class="buyAdriaButton pointer display-none" data-t="INDEX.HEADER.WISH_LIST_MODAL.CLOSE"></cut-button>
-                <cut-button id="sendBtn" class="buyAdriaButton pointer" data-t="INDEX.HEADER.WISH_LIST_MODAL.JOIN_BUTTON"></cut-button>
-                <cut-button id="tensetLink" class="display-none" href="https://www.tenset.io/" target="_blank" data-t="INDEX.HEADER.WISH_LIST_MODAL.TENSET_LINK"></cut-button>
+                <button id="closeBtn" class="btn-outline pointer display-none" data-t="INDEX.HEADER.WISH_LIST_MODAL.CLOSE"></button>
+                <button id="sendBtn" class="btn-outline pointer" data-t="INDEX.HEADER.WISH_LIST_MODAL.JOIN_BUTTON"></button>
+                <button id="tensetLink" class="btn-outline pointer display-none" data-t="INDEX.HEADER.WISH_LIST_MODAL.TENSET_LINK"></button>
             </div>
         </form>
     </div>
@@ -182,7 +183,7 @@
     <section class="galacticMission">
         <span class="subTitle" data-t="INDEX.HEADER.MIDDLE.SUB_TITLE"></span>
         <span class="mainTitle mainTitle-long" data-t="INDEX.HEADER.MIDDLE.MAIN_TITLE"></span>
-        <cut-button data-modal-target="#modal" id="open-modal" data-t="INDEX.HEADER.MIDDLE.JOIN_BUTTON" id="wish-list"></cut-button>
+        <cut-button data-modal-target="#modal" id="open-modal" data-t="INDEX.HEADER.MIDDLE.JOIN_BUTTON" id="wish-list" class="buyAdriaButton pointer"></cut-button>
     </section>
     <div id="section-wrapper">
         <div class="groupOfSections">
