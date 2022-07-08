@@ -50,6 +50,7 @@ header {
   @media (min-width: 1200.01px) {
     &.fixed {
       position: fixed;
+      z-index: -1;
     }
     @media (max-height: 760px) {
       margin-top: 0;
