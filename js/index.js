@@ -244,7 +244,9 @@ async function addWishList() {
 }
 
 closeModalBtn.addEventListener('click', () => {
-	modal.classList.remove('active');
+	const modal = document.getElementById('modal');
+	closeModal(modal);
+	setDefaultModal();
 });
 
 sendBtn.addEventListener('click', event => {
@@ -283,13 +285,6 @@ overlay.addEventListener('click', () => {
   })
 })
 
-closeModalButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const modal = button.closest('.modal');
-    closeModal(modal);
-	setDefaultModal();
-  })
-});
 
 function setDefaultModal() {
 	const formControl = document.getElementById('form-control');
