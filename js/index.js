@@ -47,8 +47,22 @@ function sendHttpRequest(method, url, data) {
 			});
 		}
 	}).catch(error => {
-		throw new Error('Something wrong!');
+		createErrorModal(error);
 	})
+}
+
+function createErrorModal(error) {
+	const selectedLang = window.location.pathname.slice(1,3);
+	const modalMsg = translateMessage(selectedLang, 'ERROR');
+	const formControl = document.getElementById('form-control');
+	const formHeader = document.getElementById('form-header');
+	const sendBtn = document.getElementById('sendBtn');
+	const closeBtn = document.getElementById('closeBtn');
+
+	formHeader.innerHTML = `<div class="${modalMsg.headerClass}">${modalMsg.header}</div>`;
+	formControl.innerHTML = `<div class="modal-content">${modalMsg.message}</div>`;
+	sendBtn.classList.add('display-none');
+	closeBtn.classList.remove('display-none');
 }
 
 function translateMessage(selectedLang, messageCode) {
@@ -109,6 +123,14 @@ function translateMessage(selectedLang, messageCode) {
 					headerClass = 'error';
 					break;
 				}
+			case 'ERROR':
+				{
+					header = 'Ups! Something goes wrong!';
+					message = 'Try again after one minute.';
+					btn = 'Close';
+					headerClass = 'error';
+					break;
+				}
 			default:
 				{
 					header = 'Join to Whitelist',
@@ -165,6 +187,14 @@ function translateMessage(selectedLang, messageCode) {
 					header = 'Ups! Coś poszło nie tak!';
 					message = 'Serwer Tenset nie odpowiada. Proszę spróbować później.';
 					btn = 'Zamknij';
+					headerClass = 'error';
+					break;
+				}
+			case 'ERROR':
+				{
+					header = 'Ups! Coś poszło nie tak!';
+					message = 'Proszę spróbować później za minutę.';
+					btn = 'Close';
 					headerClass = 'error';
 					break;
 				}
@@ -250,7 +280,6 @@ closeModalBtn.addEventListener('click', () => {
 });
 
 sendBtn.addEventListener('click', event => {
-	//"0x3F939356d15952b92495848667e40AE36F74813c"
 	event.preventDefault();
 	try {
 		addWishList();
