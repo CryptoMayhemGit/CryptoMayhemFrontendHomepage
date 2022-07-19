@@ -28,7 +28,7 @@
   --border: #767676;
   --background: #1c1b1b;
   flex: 0 0 auto;
-  filter: drop-shadow(0px 3px 26px rgba(#767676, 0.15));
+  filter: drop-shadow(0px 3px 26px rgba(#767676, 0.15)) !important;
 }
 
 header {
