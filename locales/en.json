@@ -23,9 +23,14 @@
 				"DOCUMENTS": "Documents",
 				"CONTACT": "Contact"
 			},
-			"MIDDLE": {
-				"SUB_TITLE": "join the",
-				"MAIN_TITLE": "galactic mission",
+			"MIDDLE": {                
+			    "SUB_TITLE": "join the",
+                "MAIN_TITLE": "galactic mission",
+				"PRE_SALE_INFO_TITLE": "presale of adria token",
+				"START_PRE_SALE_INFO_DETAILS_FRONT": "start ",
+				"START_PRE_SALE_INFO_DETAILS_MIDDLE": "01.08, 12:00 cet",
+				"END_PRE_SALE_INFO_DETAILS_FRONT": "STARTED",
+				"PRE_SALE_INFO_DETAILS_END": ", left:",
 				"PLAY": "Coming soon",
 				"JOIN_BUTTON": "JOIN THE WHITELIST"
 			},

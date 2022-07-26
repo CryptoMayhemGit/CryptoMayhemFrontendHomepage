@@ -11,8 +11,8 @@ section.galacticMission {
   left: 0;
   height: 100vh;
   box-sizing: border-box;
-
-  .subTitle {
+  
+  .subTitle-galactic-mission {
     font-size: 71px;
     color: transparent;
     -webkit-text-stroke: 0.5px white;
@@ -23,7 +23,7 @@ section.galacticMission {
     margin-bottom: -5px;
   }
 
-  .mainTitle {
+  .mainTitle-galactic-mission {
     font-size: 122px;
     text-transform: uppercase;
     font-family: "Nulshock";
@@ -32,9 +32,85 @@ section.galacticMission {
     letter-spacing: -1.5px;
     line-height: 0.95;
 
-    &.mainTitle-long {
+    &.mainTitle-long-galactic-mission {
       font-size: 92px;
     }
+  }
+
+  .subTitle {
+    color: #F2F2F2;
+    text-transform: uppercase;
+    font-family: "Nulshock";
+	
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 120%;
+
+
+    letter-spacing: 3px;
+    margin-bottom: -5px;
+  }
+
+  .mainTitle {
+    color: #F2F2F2;
+    font-size: 124px;
+    text-transform: uppercase;
+    font-family: "Nulshock";
+    max-width: 1200px;
+    text-align: center;
+    letter-spacing: -1.5px;
+	
+	font-style: normal;
+	font-weight: 700;
+	line-height: 120%;
+	
+    &.mainTitle-long {
+		letter-spacing: 1.5px;
+		font-size: 64px;
+    }
+  }
+
+  .radialGradient {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px 50px;
+	gap: 10px;
+
+	width: 1200;
+	height: 274px;
+
+	background: radial-gradient(50% 50% at 50% 50%, rgba(28, 27, 27, 0.5) 0%, rgba(28, 27, 27, 0) 100%);
+  }
+  
+  .radialGradientWrap {
+	display: inline;
+	margin-bottom: 20px;
+  }
+  
+  .separator {
+    font-family: none;
+    font-size: 90px;
+	font-weight: 100;
+  }
+  
+  .endDate {
+	font-family: 'Nulshock';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 120%;
+	color: #00D62E;
+  }
+  
+  .endDateOther {
+	font-family: 'Nulshock';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 120%;
+	color: #F2F2F2;
   }
 
   cut-button {
@@ -117,18 +193,40 @@ section.galacticMission {
 
   @media (max-width: 1200px) {
     min-height: 660px;
-
-    .subTitle {
-      font-size: calc(71px / 2 + 71 / 1200 * 50vw);
-    }
-    .mainTitle {
+	
+    .mainTitle-galactic-mission {
       font-size: calc(122px / 2 + 122 / 1200 * 50vw);
 
-      &.mainTitle-long {
+      &.mainTitle-long-galactic-mission {
         font-size: calc(80px / 2 + 80 / 1200 * 50vw);
       }
     }
   }
+  
+  @media (max-width: 1100px) {
+  
+	.subTitle {
+		font-size: 14px;
+	}  
+	
+	.endDate {
+		font-size: 32px;
+	}
+
+	.endDateOther {
+		font-size: 20px;
+	}
+  
+	.separator {
+		font-size: 42px;
+	}
+	.mainTitle {
+		&.mainTitle-long {
+			font-size: 32px;
+		}
+	}
+  }
+  
   @media (max-width: 900px) {
     top: 0;
     bottom: 0;
@@ -161,11 +259,11 @@ section.galacticMission {
       object-fit: contain;
       grid-column: 1;
     }
-    .subTitle {
+    .subTitle-galactic-mission {
       grid-row: 2;
       grid-column: 1;
     }
-    .mainTitle {
+    .mainTitle-galactic-mission {
       grid-row: 3;
       grid-column: 1;
     }
@@ -177,29 +275,91 @@ section.galacticMission {
     }
   }
 
+  @media (max-width: 850px) {
+  
+	.subTitle {
+		font-size: 12px;
+	}  
+	
+	.endDate {
+		font-size: 24px;
+	}
+
+	.endDateOther {
+		font-size: 18px;
+	}
+  }
+  
   @media (max-width: 700px) {
     min-height: 700px;
-    .subTitle {
+    .subTitle-galactic-mission {
       font-size: calc(71 / 900 * 100vw);
     }
-    .mainTitle {
+    .mainTitle-galactic-mission {
       font-size: calc(122 / 900 * 100vw);
 
-      &.mainTitle-long {
+      &.mainTitle-long-galactic-mission {
         font-size: calc(71 / 900 * 100vw);
       }
     }
   }
+  
+  @media (max-width: 630px) {
+	.separator {
+		font-size: 32px;
+	}
+	.mainTitle {
+		&.mainTitle-long {
+			font-size: 22px;
+		}
+	}
+  }
+  
+  @media (max-width: 550px) {
+  
+	.subTitle {
+		font-size: 10px;
+	}  
+	
+	.endDate {
+		font-size: 16px;
+	}
+
+	.endDateOther {
+		font-size: 14px;
+	}
+  }
+  
+  @media (max-width: 500px) {
+	.separator {
+		font-size: 28px;
+	}
+	.mainTitle {
+		&.mainTitle-long {
+			font-size: 18px;
+		}
+	}
+  }
+  
   @media (max-width: 400px) {
     min-height: 600px;
+	
+	.separator {
+		font-size: 21px;
+	}
+	.mainTitle {
+		&.mainTitle-long {
+			font-size: 14px;
+		}
+	}
   }
 
   @media (max-width: 900px) and (orientation: landscape) {
-    .subTitle {
+    .subTitle-galactic-mission {
       font-size: calc(11px / 2 + 71 / 1200 * 50vw);
     }
-    .mainTitle {
-      &.mainTitle-long {
+    .mainTitle-galactic-mission {
+      &.mainTitle-long-galactic-mission {
         font-size: calc(21px / 2 + 80 / 1200 * 50vw);
       }
     }

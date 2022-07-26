@@ -25,7 +25,12 @@
 			},
 			"MIDDLE": {
 				"SUB_TITLE": "Dołącz do",
-				"MAIN_TITLE": "galaktycznej <br> misji",
+                "MAIN_TITLE": "galaktycznej <br> misji",
+				"PRE_SALE_INFO_TITLE": "Przedsprzedaż tokena ADRIA",
+				"START_PRE_SALE_INFO_DETAILS_FRONT": "start ",
+				"START_PRE_SALE_INFO_DETAILS_MIDDLE": "01.08, 12:00 cet",
+				"END_PRE_SALE_INFO_DETAILS_FRONT": "rozpoczęła SIĘ",
+				"PRE_SALE_INFO_DETAILS_END": ", pozostało:",
 				"PLAY": "Wkrótce",
 				"JOIN_BUTTON": "DOŁĄCZ DO WHITELIST"
 			},
