@@ -30,7 +30,7 @@ function HideOrShowVideo() {
 }
 	
 var dateToStartPresale = new Date(Date.UTC(2022, 6, 21, 20, 33, 0)).getTime();
-var dateToEndPresale = new Date(Date.UTC(2022, 7, 21, 20, 34, 0)).getTime();
+var dateToEndPresale = new Date(Date.UTC(2022, 6, 21, 20, 34, 0)).getTime();
 
 
 SetTimeToEnd();
@@ -114,7 +114,7 @@ function EnableSection()
 		galacticMissionStartPreSale.style.display = "none";
 		galacticMissionEndPresale.style.display = "none";
 		galacticMissionEnd.style.display = "flex";
-		buyAdriaOptional.style.display = "inline";
+		buyAdriaOptional.style.display = "none";
 		SetGalacticMission();
 	}
 }
