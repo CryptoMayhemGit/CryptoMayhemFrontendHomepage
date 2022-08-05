@@ -3,7 +3,7 @@ section.galacticMission {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 475px 0 300px 0;
+  padding: calc(200 / 900 * 100vw) 0 300px 0;
   text-align: center;
   position: fixed;
   top: 0;
@@ -24,6 +24,7 @@ section.galacticMission {
   }
 
   .mainTitle-galactic-mission {
+    height: 122px;
     font-size: 122px;
     text-transform: uppercase;
     font-family: "Nulshock";
@@ -75,11 +76,11 @@ section.galacticMission {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 30px 50px;
+	padding: 30px 50px 0px 50px;
 	gap: 10px;
 
 	width: 1200;
-	height: 274px;
+	height: 180px;
 
 	background: radial-gradient(50% 50% at 50% 50%, rgba(28, 27, 27, 0.5) 0%, rgba(28, 27, 27, 0) 100%);
   }
@@ -116,7 +117,9 @@ section.galacticMission {
   cut-button {
     width: 278px;
     box-sizing: border-box;
-    margin: 140px 40px 40px;
+    margin: -moz-calc(10% - (20px + 30px));
+    margin: -webkit-calc(10% - (20px + 30px));
+    margin: calc(10% - (20px + 30px));
     font-weight: 600;
     line-height: 2;
     filter: drop-shadow(0 3px 25px #16b338);
@@ -343,6 +346,10 @@ section.galacticMission {
   
   @media (max-width: 400px) {
     min-height: 600px;
+	.radialGradient {
+		height: 210px;
+	}
+
 	
 	.separator {
 		font-size: 21px;
@@ -367,7 +374,7 @@ section.galacticMission {
     cut-button {
       padding: 5px 35px;
       width: 236px;
-      margin: 30px 40px 40px;
+      margin: 0px 40px 40px 40px;
     }
 
     padding: 0px 0 300px 0;
