@@ -10,6 +10,7 @@ let galacticMissionStartPreSale = document.getElementById("galacticMissionStartP
 let galacticMissionEndPresale = document.getElementById("galacticMissionEndPresale");
 let galacticMissionEnd = document.getElementById("galacticMissionEnd");
 let buyAdriaOptional = document.getElementById("buyAdriaOptional");
+let buyAdriaOptionalBottom = document.getElementById("buyAdriaOptionalBottom");
 const selectedLang = window.location.pathname.slice(1,3);
 function updateHideOrShowVideo() {
 	HideOrShowVideo();
@@ -29,8 +30,8 @@ function HideOrShowVideo() {
 	}
 }
 	
-var dateToStartPresale = new Date(Date.UTC(2022,6,31,14,0,0)).getTime();
-var dateToEndPresale = new Date(Date.UTC(2022,7,6,14,0,0)).getTime();
+var dateToStartPresale = new Date(Date.UTC(2022,7,29,0,0,0)).getTime();
+var dateToEndPresale = new Date(Date.UTC(2022,7,31,0,0,0)).getTime();
 
 
 SetTimeToEnd();
@@ -87,6 +88,7 @@ function DisableAllSections()
 	galacticMissionEndPresale.style.display = "none";
 	galacticMissionEnd.style.display = "none";
 	buyAdriaOptional.style.display = "none";
+	buyAdriaOptionalBottom.style.display = "none";
 }
 
 function EnableSection()
@@ -98,7 +100,8 @@ function EnableSection()
 		galacticMissionStartPreSale.style.display = "flex";
 		galacticMissionEndPresale.style.display = "none";
 		galacticMissionEnd.style.display = "none"
-	    buyAdriaOptional.style.display = "inline";
+	    buyAdriaOptional.style.display = "none";
+	    buyAdriaOptionalBottom.style.display = "none";
 		SetTimeToStartPresale(now);
 	}
 	else if (dateToStartPresale <= now && dateToEndPresale > now)
@@ -107,6 +110,7 @@ function EnableSection()
 		galacticMissionEnd.style.display = "none";
 		galacticMissionEndPresale.style.display = "flex";
 	    buyAdriaOptional.style.display = "none";
+	    buyAdriaOptionalBottom.style.display = "none";
 		SetTimeToEndPresale(now);
 	}
 	else
@@ -115,6 +119,7 @@ function EnableSection()
 		galacticMissionEndPresale.style.display = "none";
 		galacticMissionEnd.style.display = "flex";
 		buyAdriaOptional.style.display = "none";
+		buyAdriaOptionalBottom.style.display = "none";
 		SetGalacticMission();
 	}
 }
