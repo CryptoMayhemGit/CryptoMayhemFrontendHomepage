@@ -27,12 +27,15 @@
 			    "SUB_TITLE": "join the",
                 "MAIN_TITLE": "galactic mission",
 				"PRE_SALE_INFO_TITLE": "presale of adria token",
+				"EARLY_ACCESS_TDS": "Top Down Shooter - early access",
 				"START_PRE_SALE_INFO_DETAILS_FRONT": "start ",
-				"START_PRE_SALE_INFO_DETAILS_MIDDLE": "29.08, 02:00 am cet",
+				"START_PRE_SALE_INFO_DETAILS_MIDDLE": "13.12, 12:00 pm cet",
 				"END_PRE_SALE_INFO_DETAILS_FRONT": "STARTED",
 				"PRE_SALE_INFO_DETAILS_END": ", time left:",
 				"PLAY": "Coming soon",
-				"JOIN_BUTTON": "JOIN THE WHITELIST"
+				"JOIN_BUTTON": "JOIN THE WHITELIST",
+				"ADD_CAL": "Add to Google calendar",
+				"MORE_BUTTON": "Find out more"
 			},
 			"WISH_LIST_MODAL": {
 				"HEADER": "Join the whitelist",

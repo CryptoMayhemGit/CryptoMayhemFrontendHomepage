@@ -30,8 +30,8 @@ function HideOrShowVideo() {
 	}
 }
 	
-var dateToStartPresale = new Date(Date.UTC(2022,7,29,0,0,0)).getTime();
-var dateToEndPresale = new Date(Date.UTC(2022,7,31,0,0,0)).getTime();
+var dateToStartPresale = new Date(Date.UTC(2022,11,13,10,0,0)).getTime();
+//var dateToEndPresale = new Date(Date.UTC(2022,12,13,0,0,0)).getTime();
 
 
 SetTimeToEnd();
@@ -104,7 +104,7 @@ function EnableSection()
 	    buyAdriaOptionalBottom.style.display = "none";
 		SetTimeToStartPresale(now);
 	}
-	else if (dateToStartPresale <= now && dateToEndPresale > now)
+	/*else if (dateToStartPresale <= now && dateToEndPresale > now)
 	{
 		galacticMissionStartPreSale.style.display = "none";
 		galacticMissionEnd.style.display = "none";
@@ -112,7 +112,7 @@ function EnableSection()
 	    buyAdriaOptional.style.display = "none";
 	    buyAdriaOptionalBottom.style.display = "none";
 		SetTimeToEndPresale(now);
-	}
+	}*/
 	else
 	{
 		galacticMissionStartPreSale.style.display = "none";

@@ -114,12 +114,20 @@ section.galacticMission {
 	color: #F2F2F2;
   }
 
-  cut-button {
+  .small-button {
+    margin-top: 50px;
+    font-weight: 500;
+    font-size: 14px;
+
+  }
+
+  .main-button {
     width: 278px;
     box-sizing: border-box;
-    margin: -moz-calc(10% - (20px + 30px));
-    margin: -webkit-calc(10% - (20px + 30px));
-    margin: calc(10% - (20px + 30px));
+    //margin: -moz-calc(10% - (20px + 30px));
+    //margin: -webkit-calc(10% - (20px + 30px));
+    //margin: calc(10% - (20px + 30px));
+    margin-top: 30px;
     font-weight: 600;
     line-height: 2;
     filter: drop-shadow(0 3px 25px #16b338);
