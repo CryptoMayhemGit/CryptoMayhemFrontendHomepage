@@ -1,5 +1,20 @@
 section.privacyPolicy {
-    margin: 200px auto 50px 200px;
+    margin: 200px 200px 150px 200px;
+
+	.privacyPolicyIndentation
+	{
+		margin: 10px 0 0 30px;
+	}
+	
+	p
+	{
+		margin: 10px 0px 0px 10px;
+	}
+
+	.privacyPolicyHeader
+	{
+		margin: 0px 0px 50px 0px;
+	}
 
 	.documentation-in-proggress {
 		font-weight: bold;
