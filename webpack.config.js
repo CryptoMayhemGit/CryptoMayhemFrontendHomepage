@@ -24,7 +24,6 @@ const populateHtmlPlugins = (pagesArray) => {
 const pages = populateHtmlPlugins(
     [
         'index',
-        'legal-compliance',
         'privacy-policy',
         'terms-and-conditions'
     ]
