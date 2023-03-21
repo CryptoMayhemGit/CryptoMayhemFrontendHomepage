@@ -30,7 +30,7 @@ function HideOrShowVideo() {
 	}
 }
 	
-var dateToStartPresale = new Date(Date.UTC(2022,11,13,11,0,0)).getTime();
+var dateToStartPresale = new Date(Date.UTC(2022,11,13,15,0,0)).getTime();
 //var dateToEndPresale = new Date(Date.UTC(2022,12,13,0,0,0)).getTime();
 
 
