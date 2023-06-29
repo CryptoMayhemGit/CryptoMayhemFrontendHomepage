@@ -201,5 +201,8 @@
 	"FOOTER": {
 		"PRIVACY_POLICY": "Polityka Prywatności",
 		"TERMS": "Zasady i Warunki"
+	},
+	"DOCUMENTS": {
+		"PITCHDECK": "../documents/pitchdeck_pl.pdf"
 	}
 }

@@ -201,5 +201,9 @@
 	"FOOTER": {
 		"PRIVACY_POLICY": "Privacy Policy",
 		"TERMS": "Terms & Conditions"
+	},
+	"DOCUMENTS": 
+	{
+		"PITCHDECK": "https://docs.google.com/presentation/d/1dLr9dHlv2vGA7HAYCJnP_jwCRiP3DvZk/edit?usp=sharing&ouid=112128912486354645761&rtpof=true&sd=true"
 	}
 }
