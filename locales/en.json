@@ -82,6 +82,7 @@
 			},
 			"SUPPLY": {
 				"SHARED": {
+					"PRICE": "Price",
 					"BLOCK": "block",
 					"WEEKS": "weeks",
 					"SINGLE_MONTH": "month",
